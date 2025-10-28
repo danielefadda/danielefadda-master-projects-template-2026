@@ -1,27 +1,26 @@
-# Welcome to Jekyll!
+# Benvenuto in Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
+# Questo file di configurazione è pensato per impostazioni che interessano tutto il blog,
+# valori che in genere imposti una volta e modifichi raramente. Se ti ritrovi a modificare
+# spesso questo file, valuta di usare i file di dati di Jekyll per le informazioni che
+# aggiorni di frequente.
 #
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Per ragioni tecniche, questo file NON viene ricaricato automaticamente quando usi
+# 'bundle exec jekyll serve'. Se lo modifichi, riavvia il processo del server.
 #
-# If you need help with YAML syntax, here are some quick references for you:
+# Se ti serve aiuto con la sintassi YAML, ecco alcune rapide reference:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Impostazioni del sito
+# Queste impostazioni personalizzano il sito. Nei file HTML le troverai tramite
+# {{ site.title }}, {{ site.email }}, ecc. Puoi creare variabili personalizzate:
+# saranno accessibili nei template tramite {{ site.myvariable }}.
 
 title: "Template per Progetti"
 subtitle: "Questo è un template per i progetti Master di SoBigData"
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- # ignora i ritorni a capo fino a "baseurl:"
   Scrivi qui una descrizione accattivante per il tuo nuovo sito. Puoi modificare questa
   riga in _config.yml. Apparirà nei meta del documento head (per
   i risultati di ricerca di Google) e nella descrizione del sito in feed.xml.
@@ -30,24 +29,24 @@ description: >- # this means to ignore newlines until "baseurl:"
 # Riportare il github del gruppo di progetto e quello del sito web (se differente).
 # Tali informazioni appariranno nel Footer del sito.
 github_repo:
-  - name: "Template per Progetti Master SoBigData"
-    url: "https://github.com/danielefadda/master-projects-template-2025/"
+  - name: "Template per i Progettoni del Master SoBigData"
+    url: "https://github.com/danielefadda/master-projects-template-2026/"
 
 markdown: kramdown
 
-baseurl: "/master-projects-template-2025"
+baseurl: "/master-projects-template-2026"
 #baseurl: ""
-url: "https://danielefadda.github.io"
+url: "https://danielefadda.github.io" # il dominio principale del sito senza barra finale (in questo caso il tuo username.github.io)
 
 #################################
-#    Navigation configuration   #
+#    Configurazione navigazione #
 #################################
 
 navbar:
-  style :  dual #don't change this, it is used to set the navbar style.
-  brand: # this is the brand of the navbar, it will be displayed on the left side.
-    title :  "Template per Progetti Master SoBigData"
-    img: "./assets/images/Logo_masthead.png" # don't change this
+  style :  dual # non modificarlo: imposta lo stile della navbar.
+  brand: # brand della navbar, mostrato a sinistra.
+    title :  "Template per i Progettoni del Master SoBigData"
+    img: "./assets/images/Logo_masthead.png" # non modificare
     url: /
   nav:
     - title: Guida
@@ -69,24 +68,24 @@ navbar:
         - title: Slider
           url: /slider.html
 
-    - title: SBD Master # this must be always the last item in the navbar, don't change it
+    - title: SBD Master # deve essere sempre l'ultimo elemento della navbar, non modificarlo
       url: https://masterbigdata.it/
 
 ###########################
-#    General appearance   #
+#     Aspetto generale    #
 ###########################
 
 #googlefonts:
 #  - url: "https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
 #  - url: "https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-#  - url: "https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap"
+#  - url: "https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&1,700&display=swap"
 
-## Google Fonts example to import Space Mono
+## Esempio Google Fonts per importare Space Mono
 googlefonts:
   - url: "https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 
 chulapa-skin:
-  skin:  "sbd" # "sbd" "pixel " "graymor" "gitdev-dark" "gitdev" "universal" "academia" "gitdev" "towards" "pear" "twitter-lights-out" "twitter-dim" "wandoo" "lymcha" "twitter" "chulapa" "sunset" "minty" "lux" "journal" "deeply"
+  skin:  "sbd" # temi disponibili: "sbd" "pixel" "graymor" "gitdev-dark" "gitdev" "universal" "academia" "gitdev" "towards" "pear" "twitter-lights-out" "twitter-dim" "wandoo" "lymcha" "twitter" "chulapa" "sunset" "minty" "lux" "journal" "deeply"
   vars:
     # font-family-base:  "Space Mono"
 
@@ -99,10 +98,10 @@ chulapa-skin:
 
 
 ##################################################
-#    Don't change anything below this line    #
+#    Non modificare nulla sotto questa riga      #
 ##################################################
 
-# Build settings
+# Impostazioni di build
 #theme: chulapa-jekyll # va usato il remote-theme!!!
 plugins:
   - jekyll-feed
@@ -128,8 +127,8 @@ footer:
 sass:
   quiet_deps: true
 
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
+# Gli elementi esclusi possono essere elaborati elencando esplicitamente le directory o
+# i relativi percorsi file nella lista `include:`.
 #
 exclude:
  - .sass-cache/
