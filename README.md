@@ -4,7 +4,7 @@ Questo repository è un template per aiutarti a costruire e pubblicare rapidamen
 ## Come iniziare
 
 1. **Crea il tuo repository:**  
-   Clicca su **"Use this template"** su GitHub e assegna al tuo repo il nome `g<numerogruppo>-<annoincorso>-website` (es. `g0-2025-website`).
+   Clicca su **"Use this template"** su GitHub e assegna al tuo repo il nome `g<numerogruppo>-<annoincorso>-website` (es. `g0-2026-website`).
 
 2. **Personalizza il tuo sito:**  
    - Modifica `_config.yml` per impostare il titolo, la descrizione e l'aspetto del progetto.
