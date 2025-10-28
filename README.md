@@ -1,23 +1,23 @@
-# SoBigData Master Project Template
-This repository is a template to help you quickly build and publish your project website using Jekyll and GitHub Pages. This template is designed to be simple, customizable, and ready for your Big Data project!
+# Template per Progetti Master SoBigData
+Questo repository è un template per aiutarti a costruire e pubblicare rapidamente il sito web del tuo progetto utilizzando Jekyll e GitHub Pages. Questo template è progettato per essere semplice, personalizzabile e pronto per il tuo progetto Big Data!
 
-## How to get started
+## Come iniziare
 
-1. **Create your repository:**  
-   Click **"Use this template"** on GitHub and name your repo `g<groupnumber>-<currentyear>-website` (e.g. `g0-2025-website`).
+1. **Crea il tuo repository:**  
+   Clicca su **"Use this template"** su GitHub e assegna al tuo repo il nome `g<numerogruppo>-<annoincorso>-website` (es. `g0-2025-website`).
 
-2. **Customize your site:**  
-   - Edit `_config.yml` to set your project title, description, and appearance.
-   - Update the navigation bar and footer links as needed.
-   - Add your team members in `_data/members.yml`.
+2. **Personalizza il tuo sito:**  
+   - Modifica `_config.yml` per impostare il titolo, la descrizione e l'aspetto del progetto.
+   - Aggiorna la barra di navigazione e i link del footer secondo necessità.
+   - Aggiungi i membri del tuo team in `_data/members.yml`.
 
-3. **Add your content:**  
-   - Create and edit pages in `docs/_pages/` (e.g. `index.md`, `project.md`, `team.md`).
-   - Add images to `assets/images/` and charts to `assets/charts/`.
+3. **Aggiungi i tuoi contenuti:**  
+   - Crea e modifica le pagine in `docs/_pages/` (es. `index.md`, `project.md`, `team.md`).
+   - Aggiungi immagini in `assets/images/` e grafici in `assets/charts/`.
 
-4. **Publish your site:**  
-   - Enable GitHub Pages in your repo settings (branch: `main`, folder: `docs`).
-   - Your site will be live at `https://<username>.github.io/<repo>/`.
+4. **Pubblica il tuo sito:**  
+   - Abilita GitHub Pages nelle impostazioni del repo (branch: `main`, cartella: `docs`).
+   - Il tuo sito sarà disponibile all'indirizzo `https://<username>.github.io/<repo>/`.
 
-For detailed instructions, read the template contents.
+Per istruzioni dettagliate, consulta i contenuti del template.
 

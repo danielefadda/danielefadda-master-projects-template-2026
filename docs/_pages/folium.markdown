@@ -1,27 +1,27 @@
 ---
 layout: default
-title:  "Folium Map"
-subtitle: "How to incorporate a map created with Folium"
+title:  "Mappa Folium"
+subtitle: "Come incorporare una mappa creata con Folium"
 header_type: hero #base, post, hero,image, splash
 header_img: assets/images/folium_map.webp
-header_title: "Folium maps"
+header_title: "Mappe Folium"
 vega: false
 ---
-This page explains how to incorporate a map created with Folium into a web page. Folium is a Python library that allows you to create interactive maps using Leaflet.js. To incorporate a map created with Folium into a web page, you need to save the map to an `.html` file and include it in the web page.
+Questa pagina spiega come incorporare una mappa creata con Folium in una pagina web. Folium è una libreria Python che ti consente di creare mappe interattive usando Leaflet.js. Per incorporare una mappa creata con Folium in una pagina web, devi salvare la mappa in un file `.html` e includerla nella pagina web.
 <br>
-## Incorporating a map created with Folium into a web page
-To incorporate a map created with Folium into a web page, you need to follow these steps:
-- Create a map with Folium
-- Save the map to an `.html` file
-- Include the `.html` file in the web page
-    - Use the `iframe` tag to embed the `.html` file in the web page
-    - Specify the path of the `.html` file as the value of the `src` attribute of the `iframe` tag
-    - Specify the map dimensions using the `width` and `height` attributes of the `iframe` tag
-    - Example HTML code to incorporate a map created with Folium into a web page:
+## Incorporare una mappa creata con Folium in una pagina web
+Per incorporare una mappa creata con Folium in una pagina web, devi seguire questi passaggi:
+- Creare una mappa con Folium
+- Salvare la mappa in un file `.html`
+- Includere il file `.html` nella pagina web
+    - Usa il tag `iframe` per incorporare il file `.html` nella pagina web
+    - Specifica il percorso del file `.html` come valore dell'attributo `src` del tag `iframe`
+    - Specifica le dimensioni della mappa usando gli attributi `width` e `height` del tag `iframe`
+    - Codice HTML di esempio per incorporare una mappa creata con Folium in una pagina web:
     
 ```<iframe src="{{site.baseurl}}/assets/charts/map.html" width="100%" height="500"></iframe>```
 
 <iframe src="{{site.baseurl}}/assets/charts/usa.html" width="100%" height="500px" ></iframe>
 
-**Note that the map created with Folium was exported with width and height set to 100%.**
-You can adjust the map dimensions by modifying the values of the `width` and `height` attributes of the `iframe` tag.
+**Nota che la mappa creata con Folium è stata esportata con larghezza e altezza impostate al 100%.**
+Puoi regolare le dimensioni della mappa modificando i valori degli attributi `width` e `height` del tag `iframe`.

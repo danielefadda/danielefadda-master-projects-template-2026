@@ -7,115 +7,115 @@ title: "Home"
 vega: true
 header_type: hero #base, post, hero,image, splash
 header_img: assets/images/header.svg
-header_title: "A guide to develop your<br> Progettone website"
+header_title: "Una guida per sviluppare il tuo<br> sito web del Progettone"
 
 ---
 
 
-# Main steps to build a website with Jekyll
+# Passaggi principali per costruire un sito web con Jekyll
 
-1. [Use this Jekyll template to create a new project](#1-use-the-jekyll-template-to-create-a-new-project) 
-2. [How to edit files in the repository](#2-how-to-edit-files-in-the-repository)
-3. [Customize the `_config.yml` file to set up your project details](#3-customize-the-_configyml-file-to-set-up-your-project-details)
-4. [Publish the project on GitHub Pages](#4-publish-the-project-on-github-pages)
-5. [Create pages](#5-create-pages)
-6. [Multimedia content and components](#6-add-multimedia-content-and-components)
-7. [Customize the layout and design](#7-customize-the-layout-and-design)
+1. [Utilizzare questo template Jekyll per creare un nuovo progetto](#1-utilizzare-il-template-jekyll-per-creare-un-nuovo-progetto) 
+2. [Come modificare i file nel repository](#2-come-modificare-i-file-nel-repository)
+3. [Personalizzare il file `_config.yml` per configurare i dettagli del progetto](#3-personalizzare-il-file-_configyml-per-configurare-i-dettagli-del-progetto)
+4. [Pubblicare il progetto su GitHub Pages](#4-pubblicare-il-progetto-su-github-pages)
+5. [Creare pagine](#5-creare-pagine)
+6. [Contenuti multimediali e componenti](#6-aggiungere-contenuti-multimediali-e-componenti)
+7. [Personalizzare il layout e il design](#7-personalizzare-il-layout-e-il-design)
 {: .lead }
 
 <br> 
 
 ---
 
-## 1. Use the Jekyll template to create a new project
+## 1. Utilizzare il template Jekyll per creare un nuovo progetto
 
 ```
-├─ 🚀 Start the project using the template
-│   ├─ 📥 Clone via “Import repository”
-│   ├─ 🏷️ Rename the repo (e.g. g0-2025-website)
-│   ├─ 👥 Invite collaborators
-│   └─ 🖥️ (Optional) Local development with ruby installed:
+├─ 🚀 Avviare il progetto usando il template
+│   ├─ 📥 Clonare via "Import repository"
+│   ├─ 🏷️ Rinominare il repo (es. g0-2025-website)
+│   ├─ 👥 Invitare i collaboratori
+│   └─ 🖥️ (Opzionale) Sviluppo locale con ruby installato:
 │       ├─ 🔧 bundle install
 │       └─ 👉 bundle exec jekyll serve → http://127.0.0.1:4000/<repo-name>
 ```
 
-You can start by cloning the Jekyll template repository for the *Big Data Project Template*.
+Puoi iniziare clonando il repository template di Jekyll per il *Template Progetto Big Data*.
 
-### Create a new repository using the template
+### Creare un nuovo repository usando il template
 
-Go to the following link:
+Vai al seguente link:
 
 ```bash
 https://github.com/danielefadda/master-projects-template-2025
 ```
 
-and press on the **Use this template** button in the top right corner of the page and select **Create a new repository**.
+e premi sul pulsante **Use this template** nell'angolo in alto a destra della pagina e seleziona **Create a new repository**.
 
 ![](assets/images/template_to_clone.png)
 
-give it a name based on your project, using the following format:
+assegnagli un nome basato sul tuo progetto, usando il seguente formato:
 ```bash
 g0-2025-website
 ```
-**N.B. you had to substitute `g0` with your group number.**
+**N.B. devi sostituire `g0` con il numero del tuo gruppo.**
 
 ![](assets/images/new_repo.png)
 
-Leave the visibility of the repository **Public** and click on "Create repository".
+Lascia la visibilità del repository **Public** e clicca su "Create repository".
 
-Once the repository is cloned, you will find a folder structure similar to the following:
+Una volta clonato il repository, troverai una struttura di cartelle simile alla seguente:
 
 
 ```bash
 project-template/docs/
 │
-├── _config.yml              # basic site settings
+├── _config.yml              # impostazioni di base del sito
 ├── _data/
-│   └── settings.yml         # visual config and textual content (customizable)
+│   └── settings.yml         # configurazione visuale e contenuto testuale (personalizzabile)
 ├── _pages/
 │   ├── index.md             # homepage
-│   ├── project.md           # project description
-│   ├── team.md              # group members
-│   └── deliverables.md      # results (PDF, poster, etc.)
+│   ├── project.md           # descrizione del progetto
+│   ├── team.md              # membri del gruppo
+│   └── deliverables.md      # risultati (PDF, poster, ecc.)
 ├── assets/
-│   └── img/                 # generic images (e.g. placeholder)
-├── _includes/               # jekyll components
-└── _layouts/                # html layouts
+│   └── img/                 # immagini generiche (es. placeholder)
+├── _includes/               # componenti jekyll
+└── _layouts/                # layout html
 ```
-**Invite your team members to the repository so they can collaborate on the project.** You can do this by going to the repository settings on GitHub, clicking on "Manage access", and inviting them by their GitHub username or email address. **Remember to add teachers as memebers: `danielefadda` and `Elecapp`**
+**Invita i membri del tuo team al repository in modo che possano collaborare al progetto.** Puoi farlo andando nelle impostazioni del repository su GitHub, cliccando su "Manage access" e invitandoli tramite il loro username GitHub o indirizzo email. **Ricorda di aggiungere i docenti come membri: `danielefadda` e `Elecapp`**
 {: .alert .alert-warning}
 <br>
 
-### Local development (optional)
+### Sviluppo locale (opzionale)
 
-This is an optional step, but if you want to develop the website locally, you need to install Jekyll on your computer. You can find the instructions on how to do it [in the official guide](https://jekyllrb.com/docs/installation/){:target="_blank"} or in our [local development section]({{ site.baseurl }}/local-development/){:target="_blank"}.
+Questo è un passaggio opzionale, ma se vuoi sviluppare il sito web localmente, devi installare Jekyll sul tuo computer. Puoi trovare le istruzioni su come farlo [nella guida ufficiale](https://jekyllrb.com/docs/installation/){:target="_blank"} o nella nostra [sezione sviluppo locale]({{ site.baseurl }}/local-development/){:target="_blank"}.
 
-For a quick reference we provide these instructions:
+Per un riferimento rapido forniamo queste istruzioni:
 
-Once the repository is cloned, run:
+Una volta clonato il repository, esegui:
 
 ```bash
 bundle install
 ```
 
-Then launch the site with the bundle command:
+Quindi avvia il sito con il comando bundle:
 ```bash
 bundle exec jekyll serve
 ```
 
-open your browser at **http://127.0.0.1:4000/<repo-name>**
+apri il tuo browser all'indirizzo **http://127.0.0.1:4000/<repo-name>**
 
 <br>
 
 ---
 
-## 2. How to edit files in the repository
+## 2. Come modificare i file nel repository
 
-You can edit the files in the repository directly on GitHub.
-You have three options to do this:
-1. **Edit files directly on GitHub**: Navigate to the file you want to edit, click on the pencil icon in the top right corner, make your changes, and then commit them.
-3. **Clone the repository to your local machine**: Use Git to clone the repository to your local machine, make your changes using a text editor or IDE, and then push the changes back to the repository.
-2. **Use the GitHub codespace editor**: Click on the green `<> code` button in the top right corner of the window, and open the codespace editor. This allows you to edit files in a more advanced editor directly in your browser, with features like syntax highlighting. Remember to install the necessary extensions for example `Prettier code formatter` to format your code automatically. If you don't see the codespace, you can click on the `Code` button and then select `Create codespace on main` to create a new codespace.
+Puoi modificare i file nel repository direttamente su GitHub.
+Hai tre opzioni per farlo:
+1. **Modificare i file direttamente su GitHub**: Naviga al file che vuoi modificare, clicca sull'icona della matita nell'angolo in alto a destra, apporta le tue modifiche e poi committale.
+3. **Clonare il repository sulla tua macchina locale**: Usa Git per clonare il repository sulla tua macchina locale, apporta le tue modifiche usando un editor di testo o IDE e poi pusha le modifiche al repository.
+2. **Usare l'editor codespace di GitHub**: Clicca sul pulsante verde `<> code` nell'angolo in alto a destra della finestra e apri l'editor codespace. Questo ti consente di modificare i file in un editor più avanzato direttamente nel tuo browser, con funzionalità come l'evidenziazione della sintassi. Ricorda di installare le estensioni necessarie, ad esempio `Prettier code formatter` per formattare automaticamente il tuo codice. Se non vedi il codespace, puoi cliccare sul pulsante `Code` e poi selezionare `Create codespace on main` per creare un nuovo codespace.
 
 ![](assets/images/codespace.png)
 
@@ -128,83 +128,83 @@ You have three options to do this:
 ---
 
 
-## 3. Customize the `_config.yml` file to set up your project details
+## 3. Personalizzare il file `_config.yml` per configurare i dettagli del progetto
 
 ```
-├─ ⚙️ Customize `_config.yml`
+├─ ⚙️ Personalizzare `_config.yml`
 │   ├─ 🏷️ baseurl, url, title, description
-│   └─ 🔗 github_repo (footer links)
+│   └─ 🔗 github_repo (link del footer)
 ```
 
-The `_config.yml` file contains the basic settings for your Jekyll site. You can customize it to set up your project details, such as the title, description, author, and other configurations.
-All the variables in the `_config.yml` file are used to generate the content of the site and can be accessed in the templates and pages using Liquid syntax. For example, you can use &#123;&#123; site.title &#125;&#125; to access the title of the site. More details on how to edit the file can be found directly in the file itself, where you can find comments explaining each variable.
+Il file `_config.yml` contiene le impostazioni di base per il tuo sito Jekyll. Puoi personalizzarlo per configurare i dettagli del tuo progetto, come il titolo, la descrizione, l'autore e altre configurazioni.
+Tutte le variabili nel file `_config.yml` vengono utilizzate per generare il contenuto del sito e possono essere accessibili nei template e nelle pagine usando la sintassi Liquid. Ad esempio, puoi usare &#123;&#123; site.title &#125;&#125; per accedere al titolo del sito. Maggiori dettagli su come modificare il file possono essere trovati direttamente nel file stesso, dove puoi trovare commenti che spiegano ogni variabile.
 
-### General settings
+### Impostazioni generali
 
-The first thing to do is to set the `baseurl` variable to the name of your repository, for example:
+La prima cosa da fare è impostare la variabile `baseurl` al nome del tuo repository, ad esempio:
 
 ```yaml
 baseurl: "/g0-2025-website"
 ```
 
-You had also to set the `url` variable to the URL of your GitHub Pages site, for example:
+Devi anche impostare la variabile `url` all'URL del tuo sito GitHub Pages, ad esempio:
 
 ```yaml 
 url: "https://<username>.github.io"
 ```
 
-Then, you can customize the following variables:
-`title`, `subtitle` and `description` of the site
+Quindi, puoi personalizzare le seguenti variabili:
+`title`, `subtitle` e `description` del sito
 
-There are also some variables that can be used to customize the appearance of the site, such as `github_repo`. These variables are used to fill information about the repository in the footer of the site.
+Ci sono anche alcune variabili che possono essere utilizzate per personalizzare l'aspetto del sito, come `github_repo`. Queste variabili vengono utilizzate per inserire informazioni sul repository nel footer del sito.
 
 <br> 
 
 ---
 
-## 4. Publish the project on GitHub Pages
+## 4. Pubblicare il progetto su GitHub Pages
 
 ```
-├─ 🌐 Publish with GitHub Pages
-│   ├─ ⚙️ Go to Settings → Pages
-│   ├─ 📂 Select branch + root directory
-│   └─ 🚀 Site is live at https://<username>.github.io/<repo>/
+├─ 🌐 Pubblicare con GitHub Pages
+│   ├─ ⚙️ Vai a Settings → Pages
+│   ├─ 📂 Seleziona branch + directory root
+│   └─ 🚀 Il sito è online su https://<username>.github.io/<repo>/
 ```
 
-To deploy your project on GitHub Pages, you can use the following steps:
+Per distribuire il tuo progetto su GitHub Pages, puoi seguire i seguenti passaggi:
 
-1. Go to the repository settings on GitHub.
-2. Scroll down to the "GitHub Pages" section.
-3. **Select the branch `main` and the `docs` folder**.
-4. Click "Save" to enable GitHub Pages.
-5. Your site will be published at `https://<username>.github.io/<repository-name>/`.
+1. Vai alle impostazioni del repository su GitHub.
+2. Scorri fino alla sezione "GitHub Pages".
+3. **Seleziona il branch `main` e la cartella `docs`**.
+4. Clicca su "Save" per abilitare GitHub Pages.
+5. Il tuo sito sarà pubblicato all'indirizzo `https://<username>.github.io/<repository-name>/`.
 
-Once you have enabled GitHub Pages, every time you push changes to the selected branch, your site will be automatically updated.
+Una volta abilitato GitHub Pages, ogni volta che effettui il push delle modifiche al branch selezionato, il tuo sito verrà automaticamente aggiornato.
 
 <br>
 
 ---
 
-## 5. Create pages
+## 5. Creare pagine
 
 ```
-├─ 📄 Create and organize pages (`_pages/`)
+├─ 📄 Creare e organizzare le pagine (`_pages/`)
 │   ├─ 🏠 index.md
 │   ├─ 📁 project.md
 │   ├─ 👥 team.md
 │   ├─ 📦 deliverables.md
-│   └─ ✏️ Each file: front matter → layout, title, subtitle, vega, header_type, etc.
+│   └─ ✏️ Ogni file: front matter → layout, title, subtitle, vega, header_type, ecc.
 ```
 
-Each Markdown file in the `docs/_pages` directory folder corresponds to a page in the final website. Adding and editing pages can be done directly in the GitHub repository.
+Ogni file Markdown nella cartella `docs/_pages` corrisponde a una pagina nel sito web finale. L'aggiunta e la modifica delle pagine possono essere effettuate direttamente nel repository GitHub.
 
-To add a page, follow these steps:
-- navigate to docs/_pages folder and select **Add file** then **Create new file**
+Per aggiungere una pagina, segui questi passaggi:
+- naviga nella cartella docs/_pages e seleziona **Add file** poi **Create new file**
   ![](assets/images/add-page.png)
-- Make sure your new file name ends with the file extension `.md` or `.markdown` (for example, `about.md).`
-- Your new page is now ready to be edited! I recommend writing a basic front matter to begin with.
+- Assicurati che il nome del tuo nuovo file termini con l'estensione `.md` o `.markdown` (ad esempio, `about.md).`
+- La tua nuova pagina è ora pronta per essere modificata! Ti consiglio di scrivere un front matter di base per iniziare.
 
-The name of the file will be used as the URL of the page. For example, if you create a file called `about.md`, it will be accessible at `https://<username>.github.io/<repository-name>/about/`.
+Il nome del file verrà utilizzato come URL della pagina. Ad esempio, se crei un file chiamato `about.md`, sarà accessibile all'indirizzo `https://<username>.github.io/<repository-name>/about/`.
 
 ```bash
 big-data-project/
@@ -220,66 +220,66 @@ big-data-project/
 
 ### Front Matter
 
-Each page should start with a YAML front matter block that defines the layout and other metadata for the page. 
+Ogni pagina dovrebbe iniziare con un blocco front matter YAML che definisce il layout e altri metadati per la pagina. 
 
-Front Matter is a section at the beginning of a file containing metadata about the file itself.  
-It is delimited by three dashes (`---`) and can include variables such as layout, title, subtitle, cover image, header type, etc.  
-This information is used to customize the page content. Variables in the Front Matter are accessible via Liquid variables within the file and are used in templates with the declaration `{{ page.variable-name }}`
+Il Front Matter è una sezione all'inizio di un file contenente metadati sul file stesso.  
+È delimitato da tre trattini (`---`) e può includere variabili come layout, title, subtitle, cover image, header type, ecc.  
+Queste informazioni vengono utilizzate per personalizzare il contenuto della pagina. Le variabili nel Front Matter sono accessibili tramite variabili Liquid all'interno del file e vengono utilizzate nei template con la dichiarazione `{{ page.variable-name }}`
 
 
-For example:
+Ad esempio:
 
 ```yaml
 ---
 layout: default
 title: "Home"
-subtitle: "A template and a guide to develop your Big Data Project website"
-...
+subtitle: "Un template e una guida per sviluppare il tuo sito web del Progetto Big Data"
+....
 ---
 ```
 
-### Content
+### Contenuto
 
-You can use headings, paragraphs, lists (and much more) to structure the content effectively. This can be done using Markdown syntax, which allows for easy formatting of text. For example, you can use **bold** or *italic* text to emphasize key points, and you can create lists to organize information clearly.
+Puoi usare titoli, paragrafi, elenchi (e molto altro) per strutturare il contenuto in modo efficace. Questo può essere fatto usando la sintassi Markdown, che consente una facile formattazione del testo. Ad esempio, puoi usare testo **grassetto** o *corsivo* per enfatizzare i punti chiave e puoi creare elenchi per organizzare le informazioni in modo chiaro.
 
-This is an example of how to format the text in a way that is visually appealing and easy to read.
-In this paragraph we use a `.lead` class to highlight the main points of the project.
+Questo è un esempio di come formattare il testo in modo visivamente accattivante e facile da leggere.
+In questo paragrafo usiamo una classe `.lead` per evidenziare i punti principali del progetto.
 {: .lead}
 
 <p class="green"> 
-    You can write an entire page using only markdown syntax, but you can also use HTML tags to add more complex elements or <strong>not standard layout</strong>. In this example, we use a paragraph with a class <code>.green</code> to highlight the text in green color.
+    Puoi scrivere un'intera pagina usando solo la sintassi markdown, ma puoi anche usare tag HTML per aggiungere elementi più complessi o <strong>layout non standard</strong>. In questo esempio, usiamo un paragrafo con una classe <code>.green</code> per evidenziare il testo in colore verde.
 </p>
 
-This theme is based on Bootstrap, so you can use all the Bootstrap classes to style your content. For example, you can use the `.container` class to create a responsive container, or the `.row` and `.col-*` classes to create a grid layout.
+Questo tema è basato su Bootstrap, quindi puoi usare tutte le classi Bootstrap per stilizzare il tuo contenuto. Ad esempio, puoi usare la classe `.container` per creare un container responsive, o le classi `.row` e `.col-*` per creare un layout a griglia.
 
-You can find more information about the Bootstrap classes at this page: [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/){:target="_blank"}.
+Puoi trovare maggiori informazioni sulle classi Bootstrap a questa pagina: [Documentazione Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/){:target="_blank"}.
 
 <br>
 
 ---
 
-## 6. Add Multimedia content and components
+## 6. Aggiungere contenuti multimediali e componenti
 
 ```
-├─ 🎥 Multimedia content
-│   ├─ 🖼️ Images
-│   │     ├─ 📁 folder: assets/images/
-│   │     ├─ 📝 use Markdown or `img` tag
-│   │     └─ 🖼️ galleries via `masonry.html` + config
-│   ├─ 🎬 Videos
-│   │     └─ ▶️ embed YouTube using shortcode
-│   ├─ 📷 Icons
-│   │     └─ 🔍 use Font Awesome icons
-│   ├─ 🖼️ Modals
-│   │     └─ 🆕 use Bootstrap modals for pop-ups
-│   └─ 📈 Charts (Vega-Altair)
-│         ├─ 💾 save JSON in assets/charts/
-│         ├─ ✅ include `vega: true` in front matter
+├─ 🎥 Contenuti multimediali
+│   ├─ 🖼️ Immagini
+│   │     ├─ 📁 cartella: assets/images/
+│   │     ├─ 📝 usa Markdown o tag `img`
+│   │     └─ 🖼️ gallerie via `masonry.html` + config
+│   ├─ 🎬 Video
+│   │     └─ ▶️ incorpora YouTube usando shortcode
+│   ├─ 📷 Icone
+│   │     └─ 🔍 usa icone Font Awesome
+│   ├─ 🖼️ Modal
+│   │     └─ 🆕 usa modal Bootstrap per pop-up
+│   └─ 📈 Grafici (Vega-Altair)
+│         ├─ 💾 salva JSON in assets/charts/
+│         ├─ ✅ includi `vega: true` nel front matter
 │         └─ 🔗 shortcode `<vegachart schema-url=...>`
 ```
 
-### Images
-You can add images to your pages using the html `img` tag. To add an image, you had to save the image in the `assets/images` directory and then use the `img` tag or the markdown syntax to embed it in the page. For example:
+### Immagini
+Puoi aggiungere immagini alle tue pagine usando il tag html `img`. Per aggiungere un'immagine, devi salvare l'immagine nella directory `assets/images` e poi usare il tag `img` o la sintassi markdown per incorporarla nella pagina. Ad esempio:
 
 ```markdown
 ![DR Jekyll](assets/images/Dr_Jekyll.jpg)
@@ -287,9 +287,9 @@ You can add images to your pages using the html `img` tag. To add an image, you 
 
 ![DR Jekyll](assets/images/Dr_Jekyll.jpg)
 
-### Image Gallery
+### Galleria di immagini
 
-In this theme there are also some shortcodes that can be used to add images in a gallery format. Save the images in the subdirectory `assets/images/gallery_one` and then use the following syntax to embed them in the page:
+In questo tema ci sono anche alcuni shortcode che possono essere utilizzati per aggiungere immagini in formato galleria. Salva le immagini nella sottodirectory `assets/images/gallery_one` e poi usa la seguente sintassi per incorporarle nella pagina:
 
 {% raw %}
 ```
@@ -311,9 +311,9 @@ In this theme there are also some shortcodes that can be used to add images in a
 {% include_cached snippets/masonry.html internal="charts" %}
 </div>
 
-`include_cached snippets/masonry.html` indicates that the `masonry.html` file is included from the `_includes/snippets` directory. The `internal` parameter is used to specify the name of the subdirectory where the images are stored. In this case, the images are stored in the `assets/images/thumb-charts` directory.
+`include_cached snippets/masonry.html` indica che il file `masonry.html` è incluso dalla directory `_includes/snippets`. Il parametro `internal` viene utilizzato per specificare il nome della sottodirectory in cui sono memorizzate le immagini. In questo caso, le immagini sono memorizzate nella directory `assets/images/thumb-charts`.
 
-Remember to include the `assets/images/thumb-charts` directory in the `_config.yml` file, so that the images are correctly displayed in the gallery. You can do this by adding the following line to the `_config.yml` file:
+Ricorda di includere la directory `assets/images/thumb-charts` nel file `_config.yml`, in modo che le immagini vengano visualizzate correttamente nella galleria. Puoi farlo aggiungendo la seguente riga al file `_config.yml`:
 
 ```yaml
 defaults:
@@ -323,58 +323,58 @@ defaults:
       image_col: charts
 ```
 
-**N.B. pay attention to the indentation of the `yml file` variables, as it is important for the correct functioning of the theme. If you are editing the website locally, restart the service to view changes made in _config.yml**
+**N.B. presta attenzione all'indentazione delle variabili del `yml file`, poiché è importante per il corretto funzionamento del tema. Se stai modificando il sito web localmente, riavvia il servizio per visualizzare le modifiche apportate in _config.yml**
 
-### Videos
+### Video
 
 {% include snippets/video.html id="HrEuJO3wz3k" provider="youtube" %}
 
-You can include youtube video using the syntax above, where `id` is the ID of the video and `provider` is the name of the video provider (in this case, `youtube`). You can also use other providers such as `vimeo` or `dailymotion`. The video will be embedded in the page and will be responsive, adapting to the width of the container in which it is placed.
+Puoi includere video youtube usando la sintassi sopra, dove `id` è l'ID del video e `provider` è il nome del provider video (in questo caso, `youtube`). Puoi anche usare altri provider come `vimeo` o `dailymotion`. Il video verrà incorporato nella pagina e sarà responsive, adattandosi alla larghezza del container in cui è posizionato.
 
-### Icons
+### Icone
 
-To insert icons, you can use [Font Awesome](https://fontawesome.com/search){:target="_blank"}.
+Per inserire icone, puoi usare [Font Awesome](https://fontawesome.com/search){:target="_blank"}.
 
 ```html
-<i class="fa-solid fa-pen-nib"></i> To add an icon to text, simply include the corresponding HTML code.
+<i class="fa-solid fa-pen-nib"></i> Per aggiungere un'icona al testo, basta includere il codice HTML corrispondente.
 ```
 
-<i class="fa-solid fa-pen-nib"></i> A pen
+<i class="fa-solid fa-pen-nib"></i> Una penna
 
-<i class="fa-solid fa-code"></i> A code icon
+<i class="fa-solid fa-code"></i> Un'icona codice
 
-<i class="fa-solid fa-chart-bar"></i> A chart icon
+<i class="fa-solid fa-chart-bar"></i> Un'icona grafico
 
-### Modals
-You can also create modals to display additional content or information in a separate window without leaving the current page. Modals are a common UI pattern used to display content in a dialog box that overlays the main content of the page. This theme uses [Bootstrap's modal component](https://getbootstrap.com/docs/4.5/components/modal/){:target="_blank"}, which provides a simple way to create modals with minimal code. To create a modal, you can use the following syntax:
+### Modal
+Puoi anche creare modal per visualizzare contenuti o informazioni aggiuntive in una finestra separata senza lasciare la pagina corrente. I modal sono un pattern UI comune utilizzato per visualizzare contenuti in una finestra di dialogo che si sovrappone al contenuto principale della pagina. Questo tema utilizza [il componente modal di Bootstrap](https://getbootstrap.com/docs/4.5/components/modal/){:target="_blank"}, che fornisce un modo semplice per creare modal con codice minimo. Per creare un modal, puoi usare la seguente sintassi:
 
 ```html
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
+  Avvia demo modal
 </button>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Titolo del modal</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
       </div>
       <div class="modal-body">
-        This is the content of the modal. You can add any HTML content here, including images, text, and other elements.
-         You can also use this space to provide additional information about your project, such as the methodology or other technical details.
+        Questo è il contenuto del modal. Puoi aggiungere qualsiasi contenuto HTML qui, incluse immagini, testo e altri elementi.
+         Puoi anche usare questo spazio per fornire informazioni aggiuntive sul tuo progetto, come la metodologia o altri dettagli tecnici.
         </div>
         <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
         </div>
     </div>
     </div>
 </div>
 ```
-A button is used to trigger the modal, and the `data-toggle` and `data-target` attributes are used to specify the modal to be opened. The modal itself is defined in a `div` with the class `modal`, and it contains a header, body, and footer. You can add any HTML content you want inside the modal body.
+Un pulsante viene utilizzato per attivare il modal e gli attributi `data-toggle` e `data-target` vengono utilizzati per specificare il modal da aprire. Il modal stesso è definito in un `div` con la classe `modal` e contiene un header, body e footer. Puoi aggiungere qualsiasi contenuto HTML desideri all'interno del body del modal.
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Launch demo modal</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Avvia demo modal</button>
 
-This is an alternative version using an image as a trigger for the same modal (same ID):
+Questa è una versione alternativa che utilizza un'immagine come trigger per lo stesso modal (stesso ID):
 
 <div style="border:1px solid #ccc; padding: 10px; margin-bottom: 20px;">
   <img src="{{site.baseurl}}/assets/images/Logo_SoBigData_ITA_560_X_100.png" class="img-fluid" data-toggle="modal" data-target="#exampleModal" style="cursor: pointer">
@@ -383,28 +383,28 @@ This is an alternative version using an image as a trigger for the same modal (s
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Titolo del modal</h5>
         <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" style="border:none;"><span aria-hidden="true">×</span></button>
       </div>
       <div class="modal-body">
-        This is the content of the modal. You can add any HTML content here, including images, text, and other elements.
-        <br> You can also use this space to provide additional information about your project, such as the methodology or other technical details.
+        Questo è il contenuto del modal. Puoi aggiungere qualsiasi contenuto HTML qui, incluse immagini, testo e altri elementi.
+        <br> Puoi anche usare questo spazio per fornire informazioni aggiuntive sul tuo progetto, come la metodologia o altri dettagli tecnici.
         </div>
         <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
         </div>
     </div>
     </div>
 </div>
 
-Using the class `modal-xl`, `modal-lg`, or `modal-sm` you can change the size of the modal, which is useful if you want to display a lot of content in the modal. You can also use the `modal-dialog-centered` class to center the modal vertically on the page.
+Usando la classe `modal-xl`, `modal-lg` o `modal-sm` puoi cambiare la dimensione del modal, il che è utile se vuoi visualizzare molto contenuto nel modal. Puoi anche usare la classe `modal-dialog-centered` per centrare verticalmente il modal sulla pagina.
 
-### Charts
+### Grafici
 
-🔗 [(See full guide and example for more informations)](charts/)
+🔗 [(Vedi guida completa ed esempio per maggiori informazioni)](charts/)
 
-1. **Create the chart in Altair**  
-   Use `width='container'` for responsiveness.
+1. **Crea il grafico in Altair**  
+   Usa `width='container'` per la responsività.
    ```python
    chart = alt.Chart(data).mark_bar().encode(
        x='a:N', y='b:Q'
@@ -412,23 +412,23 @@ Using the class `modal-xl`, `modal-lg`, or `modal-sm` you can change the size of
    chart.save('chart.json')
    ```
 
-2. **Place the file in** `assets/charts/`.
+2. **Posiziona il file in** `assets/charts/`.
 
-3. **Add this HTML to your page:**
+3. **Aggiungi questo HTML alla tua pagina:**
 
-   Specify the height of the chart in the `style` attribute to ensure it displays correctly.
+   Specifica l'altezza del grafico nell'attributo `style` per assicurarti che venga visualizzato correttamente.
    ```html
    <div style="height: 400px">
      <vegachart schema-url="{{site.baseurl}}/assets/charts/chart.json" style="width: 100%; height: 100%"></vegachart>
    </div>
    ```
 
-4. **In the page front matter**, if not already present, add:
+4. **Nel front matter della pagina**, se non già presente, aggiungi:
    ```yaml
    vega: true
    ```
    
-This is the result:
+Questo è il risultato:
 
 <div style="height: 400px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_responsive.json" style="width: 100%; height: 100%"></vegachart>
@@ -438,72 +438,72 @@ This is the result:
 
 ---
 
-## 7. Customize the layout and design
+## 7. Personalizzare il layout e il design
 
 ```
 ├─ 🎨 Layout & design
-│   ├─ 🧭 Navbar and footer via config and `_includes/`
-│   ├─ 🎨 Choose skin (graymor, minty, lux…)
-│   ├─ 🖌️ Customize colors via `chulapa-skin.vars`
-│   ├─ 🆕 Add Google Fonts (e.g. Lekton)
-│   ├─ 🛠️ Add custom CSS in assets/css/custom.scss
-│   ├─ 🧩 Header types: hero, base, post, image, splash
-│   └─ 🧱 Use helper CSS classes: `.full-width-wrapper`, `.lead`, `.green`, etc.
+│   ├─ 🧭 Navbar e footer via config e `_includes/`
+│   ├─ 🎨 Scegli lo skin (graymor, minty, lux…)
+│   ├─ 🖌️ Personalizza i colori via `chulapa-skin.vars`
+│   ├─ 🆕 Aggiungi Google Fonts (es. Lekton)
+│   ├─ 🛠️ Aggiungi CSS personalizzato in assets/css/custom.scss
+│   ├─ 🧩 Tipi di header: hero, base, post, image, splash
+│   └─ 🧱 Usa classi CSS helper: `.full-width-wrapper`, `.lead`, `.green`, ecc.
 ```
 
 <br>
 
-### Navigation menu
-You can customize the navigation menu by editing the `navbar` variable in the `_config.yml` file. This variable is a list of links that will be displayed in the navigation bar of the site. Each link is defined by a `title` and a `url`. You can also create submenus by using the `children` variable, which is a list of links that will be displayed as sub-items of the main link, for example:
+### Menu di navigazione
+Puoi personalizzare il menu di navigazione modificando la variabile `navbar` nel file `_config.yml`. Questa variabile è una lista di link che verranno visualizzati nella barra di navigazione del sito. Ogni link è definito da un `title` e un `url`. Puoi anche creare sottomenu usando la variabile `children`, che è una lista di link che verranno visualizzati come sotto-elementi del link principale, ad esempio:
 
 ```yaml 
 
 navbar:
-  style :  dual #don't change this, it is used to set the navbar style.
-  brand: # this is the brand of the navbar, it will be displayed on the left side.
-    title :  "SoBigData Master's projects Template"
-    img: "./assets/images/Logo_masthead.png" # don't change this
+  style :  dual #non cambiare questo, viene usato per impostare lo stile della navbar.
+  brand: # questo è il brand della navbar, verrà visualizzato sul lato sinistro.
+    title :  "Template per Progetti Master SoBigData"
+    img: "./assets/images/Logo_masthead.png" # non cambiare questo
     url: /
   nav:
-    - title: Guide
+    - title: Guida
       url: /guide.html
-    - title: Example page
+    - title: Pagina di esempio
       url: /example.html
-    - title: in-depth
+    - title: Approfondimenti
       child:
-        - title: Local development
+        - title: Sviluppo locale
           url: /local-development.html
         - title: Markdown
           url: /markdown.html
-        - title: Charts
+        - title: Grafici
           url: /charts.html
         - title: Folium
           url: /folium.html
       
 ```
 
-It's quite easy to add new links or modify existing ones. Just follow the structure of the example above, and you can create a navigation menu that suits your project needs. Please note that the **last item in the navbar** must be the **SoBigData Master link**, as it is used to link to the main website of the SoBigData Master's projects. Last but not least, **check the responsiveness** of the navbar, as it should work well on both desktop and mobile devices.
+È abbastanza facile aggiungere nuovi link o modificare quelli esistenti. Segui semplicemente la struttura dell'esempio sopra e puoi creare un menu di navigazione che si adatta alle esigenze del tuo progetto. Si prega di notare che **l'ultimo elemento nella navbar** deve essere il **link SoBigData Master**, poiché viene utilizzato per collegarsi al sito web principale dei progetti Master di SoBigData. Ultimo ma non meno importante, **controlla la responsività** della navbar, poiché dovrebbe funzionare bene sia su dispositivi desktop che mobili.
 
 <br>
 
-### General appearence
+### Aspetto generale
 
-After the navigation section, you can find the *General appearence* section, which contains variables that can be used to customize the appearance of the site. You can change the colors, fonts, and other visual aspects of the site. We discuss this in more detail in the custom layout section below.
+Dopo la sezione di navigazione, puoi trovare la sezione *Aspetto generale*, che contiene variabili che possono essere utilizzate per personalizzare l'aspetto del sito. Puoi cambiare i colori, i font e altri aspetti visivi del sito. Ne discutiamo più in dettaglio nella sezione layout personalizzato qui sotto.
 
 <br>
 
-### Customizing the theme
+### Personalizzare il tema
 
-To customize the general theme, you can modify the `skin` variable in the `_config.yml` file.  
+Per personalizzare il tema generale, puoi modificare la variabile `skin` nel file `_config.yml`.  
 ```yaml
 chulapa-skin:
   skin:  "graymor"
 ```
 
-The list of available themes is as follows:  
+L'elenco dei temi disponibili è il seguente:  
 `graymor`, `gitdev-dark`, `gitdev`, `universal`, `academia`, `gitdev`, `towards`, `pear`, `twitter-lights-out`, `twitter-dim`, `wandoo`, `lymcha`, `twitter`, `chulapa`, `sunset`, `sunset`, `minty`, `lux`, `journal`, `deeply`.
 
-You can further customize the selected skin by modifying the color variables in the `_config.yml` file.
+Puoi personalizzare ulteriormente lo skin selezionato modificando le variabili di colore nel file `_config.yml`.
 
 ```yaml
 chulapa-skin:
@@ -512,15 +512,15 @@ chulapa-skin:
     body-bg: "#fbf1ed"
 ```
 
-variables are bootstrap variables that can be used to customize the appearance of the site.
-You can change the primary color, body background color, and other variables to match your project's branding. A complete list of bootstrap customizable variables can be found at [this link](https://github.com/dieghernan/chulapa/blob/main/_sass/bootstrap/_variables.scss){:target="_blank"}, while a complete list of the variables used in this theme can be found at [this link](https://dieghernan.github.io/chulapa/docs/variable-dictionary){:target="_blank"}.
+le variabili sono variabili bootstrap che possono essere utilizzate per personalizzare l'aspetto del sito.
+Puoi cambiare il colore primario, il colore di sfondo del body e altre variabili per adattarle al branding del tuo progetto. Un elenco completo delle variabili personalizzabili di bootstrap può essere trovato a [questo link](https://github.com/dieghernan/chulapa/blob/main/_sass/bootstrap/_variables.scss){:target="_blank"}, mentre un elenco completo delle variabili utilizzate in questo tema può essere trovato a [questo link](https://dieghernan.github.io/chulapa/docs/variable-dictionary){:target="_blank"}.
 
 
 <br>
 
 
-### Header Types
-For example, you can use the `hero` layout to create a full-width header with a background image and a title:
+### Tipi di Header
+Ad esempio, puoi usare il layout `hero` per creare un header a larghezza piena con un'immagine di sfondo e un titolo:
 
 ```yaml
 layout: default
@@ -528,25 +528,25 @@ title: "Home"
 vega: true
 header_type: hero
 header_img: assets/images/Jekyll_Logo.png
-header_title: "Project Template"
-subtitle: "A template and a guide to develop your Big Data Project website"
+header_title: "Template per Progetti"
+subtitle: "Un template e una guida per sviluppare il tuo sito web del Progetto Big Data"
 ```
 
-There are several header types available, such as `base`, `post`, `hero`, `image`, and `splash`. 
-You can choose the one that best fits your content and use it in the front matter of your page.
+Ci sono diversi tipi di header disponibili, come `base`, `post`, `hero`, `image` e `splash`. 
+Puoi scegliere quello che meglio si adatta al tuo contenuto e usarlo nel front matter della tua pagina.
 
 <br>
 
-### Fonts
+### Font
 
-To import fonts different from the theme defaults using _Google Fonts_, you need to add a reference in the `_config.yml` file, which you can obtain from [Google Fonts](https://fonts.google.com/?classification=Monospace){:target="_blank"}:
+Per importare font diversi da quelli predefiniti del tema usando _Google Fonts_, devi aggiungere un riferimento nel file `_config.yml`, che puoi ottenere da [Google Fonts](https://fonts.google.com/?classification=Monospace){:target="_blank"}:
 
 ```yaml
 googlefonts:
   - url: "https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap"
 ```
 
-To set the font across the entire site, add the variables in the `_config.yml` file:
+Per impostare il font su tutto il sito, aggiungi le variabili nel file `_config.yml`:
 
 ```yaml
 chulapa-skin:
@@ -554,18 +554,18 @@ chulapa-skin:
     headings-font-family: "Lekton"
 ```
 
-Finally, you can also use fonts in a more targeted way, for example within a single class.  
-Open the `assets/css/custom.scss` file to see how the `.comic-neue-regular` class was created, used in the following line:
+Infine, puoi anche usare i font in modo più mirato, ad esempio all'interno di una singola classe.  
+Apri il file `assets/css/custom.scss` per vedere come è stata creata la classe `.comic-neue-regular`, utilizzata nella seguente riga:
 
 ```html
 <div class="comic-neue-regular" style="font-size: 20px; color:purple">
-  This is a test to check if I correctly imported the horrible font 
+  Questo è un test per verificare se ho importato correttamente l'orribile font 
   <span class="comic-neue-bold">Comic Neue</span>
 </div>
 ```
 
 <div class="comic-neue-regular" style="font-size: 20px; color:purple">
-  This is a test to check if I correctly imported the horrible font 
+  Questo è un test per verificare se ho importato correttamente l'orribile font 
   <span class="comic-neue-bold">Comic Neue</span>
 </div>
 
@@ -573,25 +573,25 @@ Open the `assets/css/custom.scss` file to see how the `.comic-neue-regular` clas
 
 ### Footer
 
-The footer section is defined in the `_includes/footer.html` file. This section should not be modified directly.  
-Instead, update the `_config.yml` file with the correct information.  
-Specifically, update the following fields:
+La sezione footer è definita nel file `_includes/footer.html`. Questa sezione non dovrebbe essere modificata direttamente.  
+Invece, aggiorna il file `_config.yml` con le informazioni corrette.  
+In particolare, aggiorna i seguenti campi:
 
 ```yaml
 github_repo:
-  - name: "Group 0 - Project repository"
+  - name: "Gruppo 0 - Repository del progetto"
     url: "https://github.com/sobigdata-master/progettone-template"
-  - name: "Group 0 - Website repository"
+  - name: "Gruppo 0 - Repository del sito web"
     url: "https://github.com/sobigdata-master/progettone-template"
 ```
 
-Once the fields are updated, edit the `_data/members.yml` file by adding the group members' information.
+Una volta aggiornati i campi, modifica il file `_data/members.yml` aggiungendo le informazioni dei membri del gruppo.
 
 <br>
 
-### Custom CSS
-You can customize the layout and design of your site using CSS. The theme uses Bootstrap, so you can use all the Bootstrap classes to style your content. You can also create your own CSS classes in the `assets/css/custom.scss` file.
-For example, you can create a class called `.comic-neue-regular` to use a custom font:
+### CSS Personalizzato
+Puoi personalizzare il layout e il design del tuo sito usando CSS. Il tema usa Bootstrap, quindi puoi usare tutte le classi Bootstrap per stilizzare il tuo contenuto. Puoi anche creare le tue classi CSS nel file `assets/css/custom.scss`.
+Ad esempio, puoi creare una classe chiamata `.comic-neue-regular` per usare un font personalizzato:
 
 ```scss
 .comic-neue-regular {
@@ -603,118 +603,118 @@ For example, you can create a class called `.comic-neue-regular` to use a custom
     font-weight: 700;
 }
 ```
-You can then use this class in your HTML code to apply the custom font to specific elements:
+Puoi quindi usare questa classe nel tuo codice HTML per applicare il font personalizzato a elementi specifici:
 
 ```html
-<div class="comic-neue-regular">This is a test to see if I have correctly imported the horrible font <span class="comic-neue-bold">Comic Neue</span></div>
+<div class="comic-neue-regular">Questo è un test per vedere se ho importato correttamente l'orribile font <span class="comic-neue-bold">Comic Neue</span></div>
 ```
 
-<div class="comic-neue-regular">This is a test to see if I have correctly imported the horrible font <span class="comic-neue-bold">Comic Neue</span></div>
+<div class="comic-neue-regular">Questo è un test per vedere se ho importato correttamente l'orribile font <span class="comic-neue-bold">Comic Neue</span></div>
 <br>
 
-If you want to add a custom CSS to a specific page, you can use the {: .class-name } syntax at the end of the paragraph or element you want to style. For example, you can use the `.lead` class to highlight the main points of the project:
+Se vuoi aggiungere un CSS personalizzato a una pagina specifica, puoi usare la sintassi {: .class-name } alla fine del paragrafo o elemento che vuoi stilizzare. Ad esempio, puoi usare la classe `.lead` per evidenziare i punti principali del progetto:
 
 ```html
-This is an example of how to format the text
+Questo è un esempio di come formattare il testo
 { : .lead }
 ```
 
 <br>
 
-### The `full-width-wrapper` class
+### La classe `full-width-wrapper`
 
-We create a special class to enlarge the width of a column: `full-width-wrapper`. You can use it to create a full-width section that spans the entire width of the page. To do this, you can wrap the content in a `div` with the class `full-width-wrapper`. For example:
+Abbiamo creato una classe speciale per allargare la larghezza di una colonna: `full-width-wrapper`. Puoi usarla per creare una sezione a larghezza piena che si estende per l'intera larghezza della pagina. Per farlo, puoi avvolgere il contenuto in un `div` con la classe `full-width-wrapper`. Ad esempio:
 
 ```html 
 <div class="full-width-wrapper">
     <img src="{{ site.baseurl }}/assets/images/header.svg" alt="sbd-pattern" class="full-width-image">
 </div>
 ```
-This will create a full-width section with the specified image.
-You can also use the `full-width-wrapper` class to create a full-width section with a background color or an image. For example:
+Questo creerà una sezione a larghezza piena con l'immagine specificata.
+Puoi anche usare la classe `full-width-wrapper` per creare una sezione a larghezza piena con un colore di sfondo o un'immagine. Ad esempio:
 
 
 <div class="full-width-wrapper" style="border-top:1px solid; border-bottom: 1px solid;">
     <div class="container">
         <div class="row pt-2 ">
             <div class="col-md-12">
-                <h4>Why use and don't use the `full-width-wrapper` class?</h4>
+                <h4>Perché usare e non usare la classe `full-width-wrapper`?</h4>
                 <p>
-                    The <code>full-width-wrapper</code> class is useful when you want to create a section that spans the entire width of the page, such as a section divider or a full-width image. However, you should avoid using it for the whole page as it can lead to a less readable layout, especially on large screens and with a lot of text. Instead, use it for specific sections where you want to create a visual impact or highlight important content or insert a gallery of images or a chart with a lot of details that needs more space to be displayed correctly.
+                    La classe <code>full-width-wrapper</code> è utile quando vuoi creare una sezione che si estende per l'intera larghezza della pagina, come un divisore di sezione o un'immagine a larghezza piena. Tuttavia, dovresti evitare di usarla per l'intera pagina poiché può portare a un layout meno leggibile, specialmente su schermi grandi e con molto testo. Invece, usala per sezioni specifiche in cui vuoi creare un impatto visivo o evidenziare contenuti importanti o inserire una galleria di immagini o un grafico con molti dettagli che necessita di più spazio per essere visualizzato correttamente.
                 </p>
             </div>
         </div>
     </div>
 </div>
 
-# Recap tree
+# Riepilogo ad albero
 
-This is a synthetic overview of the steps seen in this guide:
+Questa è una panoramica sintetica dei passaggi visti in questa guida:
 
 ```
-💡 Guide: Building a website with Jekyll
+💡 Guida: Costruire un sito web con Jekyll
 │
-├─ 1. 🚀 Use this Jekyll template to create a new project
-│   ├─ 📥 Clone via “Import repository”
-│   ├─ 🏷️ Rename the repo (e.g. g0-2025-website)
-│   ├─ 👥 Invite collaborators
-│   └─ 🖥️ (Optional) Local development with ruby installed
+├─ 1. 🚀 Utilizzare questo template Jekyll per creare un nuovo progetto
+│   ├─ 📥 Clonare via "Import repository"
+│   ├─ 🏷️ Rinominare il repo (es. g0-2025-website)
+│   ├─ 👥 Invitare i collaboratori
+│   └─ 🖥️ (Opzionale) Sviluppo locale con ruby installato
 │       ├─ 🔧 bundle install
 │       └─ 👉 bundle exec jekyll serve → http://127.0.0.1:4000/<repo-name>
 │
-├─ 2. 📝 How to edit files in the repository
-│   ├─ ✏️ Edit on GitHub
-│   ├─ 💻 Clone locally
-│   └─ 🖥️ Use GitHub Codespaces
+├─ 2. 📝 Come modificare i file nel repository
+│   ├─ ✏️ Modificare su GitHub
+│   ├─ 💻 Clonare localmente
+│   └─ 🖥️ Usare GitHub Codespaces
 │
-├─ 3. ⚙️ Customize the `_config.yml` file to set up your project details
+├─ 3. ⚙️ Personalizzare il file `_config.yml` per configurare i dettagli del progetto
 │   ├─ 🏷️ baseurl, url, title, description
-│   └─ 🔗 github_repo (footer, links)
+│   └─ 🔗 github_repo (footer, link)
 │
-├─ 4. 🌐 Publish the project on GitHub Pages
-│   ├─ ⚙️ Go to Settings → Pages
-│   ├─ 📂 Select branch + root directory
-│   └─ 🚀 Site is live at https://<username>.github.io/<repo>/
+├─ 4. 🌐 Pubblicare il progetto su GitHub Pages
+│   ├─ ⚙️ Vai a Settings → Pages
+│   ├─ 📂 Seleziona branch + directory root
+│   └─ 🚀 Il sito è online su https://<username>.github.io/<repo>/
 │
-├─ 5. 📄 Create pages
+├─ 5. 📄 Creare pagine
 │   ├─ 🏠 index.md
 │   ├─ 📁 project.md
 │   ├─ 👥 team.md
 │   ├─ 📦 deliverables.md
-│   └─ ✏️ Each file: front matter → layout, title, subtitle, vega, header_type, etc.
+│   └─ ✏️ Ogni file: front matter → layout, title, subtitle, vega, header_type, ecc.
 │
-├─ 6. 🎥 Multimedia content
-│   ├─ 🖼️ Images
-│   │     ├─ 📁 folder: assets/images/
-│   │     ├─ 📝 use Markdown or `img` tag
-│   │     └─ 🖼️ galleries via `masonry.html` + config
-│   ├─ 🎬 Videos
-│   │     └─ ▶️ embed YouTube using shortcode
-│   ├─ 📷 Icons
-│   │     └─ 🔍 use Font Awesome icons
-│   ├─ 🖼️ Modals
-│   │     └─ 🆕 use Bootstrap modals for popups
-│   └─ 📈 Charts (Vega-Altair)
-│         ├─ 💾 save JSON in assets/charts/
-│         ├─ ✅ include `vega: true` in front matter
+├─ 6. 🎥 Contenuti multimediali
+│   ├─ 🖼️ Immagini
+│   │     ├─ 📁 cartella: assets/images/
+│   │     ├─ 📝 usa Markdown o tag `img`
+│   │     └─ 🖼️ gallerie via `masonry.html` + config
+│   ├─ 🎬 Video
+│   │     └─ ▶️ incorpora YouTube usando shortcode
+│   ├─ 📷 Icone
+│   │     └─ 🔍 usa icone Font Awesome
+│   ├─ 🖼️ Modal
+│   │     └─ 🆕 usa modal Bootstrap per popup
+│   └─ 📈 Grafici (Vega-Altair)
+│         ├─ 💾 salva JSON in assets/charts/
+│         ├─ ✅ includi `vega: true` nel front matter
 │         └─ 🔗 shortcode `<vegachart schema-url=...>`
 │
-├─ 7. 🎨 Customize the layout and design
-│   ├─ 🧭 Navbar and footer via config and `_includes/`
-│   ├─ 🎨 Choose skin
-│   ├─ 🖌️ Customize colors
-│   ├─ 🆕 Add Google Fonts
-│   ├─ 🛠️ Add custom CSS
-│   ├─ 🧩 Header types
-│   └─ 🧱 Use helper CSS classes
+├─ 7. 🎨 Personalizzare il layout e il design
+│   ├─ 🧭 Navbar e footer via config e `_includes/`
+│   ├─ 🎨 Scegli lo skin
+│   ├─ 🖌️ Personalizza i colori
+│   ├─ 🆕 Aggiungi Google Fonts
+│   ├─ 🛠️ Aggiungi CSS personalizzato
+│   ├─ 🧩 Tipi di header
+│   └─ 🧱 Usa classi CSS helper
 │
-└─ ✅ Final checklist before release
-    ├─ 🔒 Repo and baseurl are correct
-    ├─ 📝 Front matter in all pages
-    ├─ 🔗 Navbar/footer updated
-    ├─ 👥 Team listed in `_data/members.yml`
-    └─ 📂 Multimedia assets properly placed
+└─ ✅ Checklist finale prima del rilascio
+    ├─ 🔒 Repo e baseurl sono corretti
+    ├─ 📝 Front matter in tutte le pagine
+    ├─ 🔗 Navbar/footer aggiornati
+    ├─ 👥 Team elencato in `_data/members.yml`
+    └─ 📂 Risorse multimediali posizionate correttamente
 ```
 
 
-This guide provides a comprehensive overview of how to create a website using Jekyll, from setting up the project to customizing the layout and design. By following these steps, you can create a professional-looking website for your Big Data project that is easy to maintain and update.
+Questa guida fornisce una panoramica completa di come creare un sito web usando Jekyll, dalla configurazione del progetto alla personalizzazione del layout e del design. Seguendo questi passaggi, puoi creare un sito web dall'aspetto professionale per il tuo progetto Big Data che sia facile da mantenere e aggiornare.

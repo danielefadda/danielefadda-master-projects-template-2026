@@ -1,30 +1,30 @@
 ---
 layout: default
-title: "Slider Page"
+title: "Pagina Slider"
 header_type: hero
 header_img: assets/images/sliding_dog.jpg
-header_title: "Slider Component Page"
-subtitle: "An Example Page for the Slider Component"
+header_title: "Pagina Componente Slider"
+subtitle: "Una Pagina di Esempio per il Componente Slider"
 ---
 
-# Slider Component Example
-This page demonstrates the use of the slider component in the SoBigData Big Data Project Template. The slider allows users to navigate through different sections or content dynamically.
+# Esempio di Componente Slider
+Questa pagina dimostra l'uso del componente slider nel Template Progetto Big Data SoBigData. Lo slider consente agli utenti di navigare attraverso diverse sezioni o contenuti in modo dinamico.
 
-{% include slider.html data="sliders" label="Choose a carousel" %}
+{% include slider.html data="sliders" label="Scegli un carosello" %}
 
 ---
 
 {% raw %}
 ```
-{% include slider.html data="sliders" label="Choose a carousel" %}
+{% include slider.html data="sliders" label="Scegli un carosello" %}
 ```
 {% endraw %}
 
-Through this component, you can load different content dynamically, starting from a yml file (in this case: `sliders.yml`) that contains the data for the slider. The slider can be used to showcase images, text, or any other content that fits within the carousel format. This component allows for easy updates and changes to the content without modifying the HTML structure.
+Attraverso questo componente, puoi caricare diversi contenuti in modo dinamico, partendo da un file yml (in questo caso: `sliders.yml`) che contiene i dati per lo slider. Lo slider può essere utilizzato per mostrare immagini, testo o qualsiasi altro contenuto che si adatti al formato carosello. Questo componente consente aggiornamenti e modifiche facili al contenuto senza modificare la struttura HTML.
 
-In case you have more than one slider, you had to specify the `label` parameter to provide a descriptive label for the slider selector, enhancing the user experience by making it clear what the slider is for.
+Nel caso in cui tu abbia più di uno slider, devi specificare il parametro `label` per fornire un'etichetta descrittiva per il selettore dello slider, migliorando l'esperienza utente rendendo chiaro a cosa serve lo slider.
 
-The structure of the yml file is the following:
+La struttura del file yml è la seguente:
 
 ```yaml 
 sliders:
@@ -32,18 +32,18 @@ sliders:
     title: "Slider 1"
     slides:
       - image: "assets/images/slider1_image1.jpg"
-        label: "Caption for Image 1"
+        label: "Didascalia per Immagine 1"
         description: "Nulla vitae elit libero, a pharetra augue mollis interdum."
       - image: "assets/images/slider1_image2.jpg"
-        label: "Caption for Image 2"
+        label: "Didascalia per Immagine 2"
         description: "Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur."
   - id: slider2
     title: "Slider 2"
     slides:
       - image: "assets/images/slider2_image1.jpg"
-        label: "Caption for Image 3"
+        label: "Didascalia per Immagine 3"
         description: "Cras justo odio, dapibus ac facilisis in, egestas eget quam."
       - image: "assets/images/slider2_image2.jpg"
-        label: "Caption for Image 4"
+        label: "Didascalia per Immagine 4"
         description: "Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
 ```

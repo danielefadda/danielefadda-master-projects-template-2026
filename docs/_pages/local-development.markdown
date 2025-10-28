@@ -1,142 +1,142 @@
 ---
 layout: default
-title: Installation
-header_title: "Jekyll Local Installation"
+title: Installazione
+header_title: "Installazione Locale di Jekyll"
 header_type: hero #base, post, hero,image, splash
 header_img: assets/images/Jekyll_Logo.png
 ---
 
 <div class="alert alert-warning">
 <p>
-<strong>This section is optional</strong>. You don't need to install Jekyll if you want to develop the website online using GitHub Pages.
+<strong>Questa sezione è opzionale</strong>. Non è necessario installare Jekyll se vuoi sviluppare il sito web online usando GitHub Pages.
 </p>
-<p>The advantages of developing the website locally are:</p>
+<p>I vantaggi dello sviluppo locale del sito web sono:</p>
 <ul>
-<li>You can test the website locally before pushing it to GitHub.</li>
-<li>You can use a local editor to write the content and manage the files.</li>
-<li>You don't have to wait for GitHub Pages to build the website every time you make a change</li>
+<li>Puoi testare il sito web localmente prima di caricarlo su GitHub.</li>
+<li>Puoi usare un editor locale per scrivere il contenuto e gestire i file.</li>
+<li>Non devi aspettare che GitHub Pages costruisca il sito web ogni volta che apporti una modifica</li>
 </ul>
 </div>
 
-# Jekyll Installation Guide
+# Guida all'Installazione di Jekyll
 
-To develop the Progettone® website, we will use a Static Site Generator (SSG), which allows you to create fast-loading websites without the need for complex backend systems or databases. In particular, we will use one of the most popular SSGs, **Jekyll**. Jekyll is a free, open-source SSG based on the Ruby programming language. **You do not need to know Ruby to use Jekyll**; you just need to have Ruby installed on your computer.
+Per sviluppare il sito web del Progettone®, utilizzeremo un Static Site Generator (SSG), che ti consente di creare siti web a caricamento rapido senza la necessità di complessi sistemi backend o database. In particolare, utilizzeremo uno degli SSG più popolari, **Jekyll**. Jekyll è un SSG gratuito e open-source basato sul linguaggio di programmazione Ruby. **Non è necessario conoscere Ruby per usare Jekyll**; devi solo avere Ruby installato sul tuo computer.
 <hr>
 
-#### The advantages of Jekyll
+#### I vantaggi di Jekyll
 
-**Ease of use**: Jekyll uses plain text files and markdown syntax to create and manage content, so you do not need to know HTML or CSS to get started.
+**Facilità d'uso**: Jekyll usa file di testo semplice e sintassi markdown per creare e gestire contenuti, quindi non è necessario conoscere HTML o CSS per iniziare.
 
-**Speed and security**: Jekyll does not interact with databases or server-side scripts, reducing the risk of vulnerabilities and attacks. It generates static HTML files, making the site incredibly fast and secure.
+**Velocità e sicurezza**: Jekyll non interagisce con database o script lato server, riducendo il rischio di vulnerabilità e attacchi. Genera file HTML statici, rendendo il sito incredibilmente veloce e sicuro.
 
-**Customizability**: Jekyll is highly customizable, allowing the use of layouts and templates or the creation of plugins to extend its functionality.
+**Personalizzabilità**: Jekyll è altamente personalizzabile, consentendo l'uso di layout e template o la creazione di plugin per estendere le sue funzionalità.
 
-**Easy deployment**: Jekyll generates static HTML files that can be distributed on a web server or hosting provider without the need for a dynamic content management system.
+**Facile distribuzione**: Jekyll genera file HTML statici che possono essere distribuiti su un server web o provider di hosting senza la necessità di un sistema di gestione dei contenuti dinamico.
 <hr>
 <br>
 
-> **In the following guide you will find the prerequisites to make Jekyll work**
+> **Nella seguente guida troverai i prerequisiti per far funzionare Jekyll**
 
 <br>
-# How to Install Jekyll on Windows
+# Come Installare Jekyll su Windows
 
-To install Ruby and Jekyll on a Windows computer, you need to use RubyInstaller. This can be done by downloading and installing a Ruby+Devkit version from [RubyInstaller Downloads](https://rubyinstaller.org/downloads/) and **using the default installation options and taking the latest recommended version** (leave everything as is, especially **MSYS2**).
+Per installare Ruby e Jekyll su un computer Windows, è necessario utilizzare RubyInstaller. Questo può essere fatto scaricando e installando una versione Ruby+Devkit da [RubyInstaller Downloads](https://rubyinstaller.org/downloads/) e **utilizzando le opzioni di installazione predefinite e prendendo l'ultima versione consigliata** (lascia tutto com'è, specialmente **MSYS2**).
 
-This operation will take a few minutes.
+Questa operazione richiederà alcuni minuti.
 
-In the last phase of the guided installation, run <code>ridk <strong>install </strong></code> (as recommended), which is used to install the gems. For more information, see the [RubyInstaller Documentation](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system).
+Nell'ultima fase dell'installazione guidata, esegui <code>ridk <strong>install </strong></code> (come consigliato), che viene utilizzato per installare le gems. Per maggiori informazioni, vedi la [Documentazione RubyInstaller](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system).
 
-At the end of the installation, you will see this prompt:
+Alla fine dell'installazione, vedrai questo prompt:
 
-![Ruby Installer on windows]({{site.baseurl}}/assets/images/RubyInstaller.png "image_tooltip")
+![Ruby Installer su windows]({{site.baseurl}}/assets/images/RubyInstaller.png "image_tooltip")
 
-Among the options, choose **MSYS2** and **MINGW development toolchain** (3 Enter).
+Tra le opzioni, scegli **MSYS2** e **MINGW development toolchain** (3 Enter).
 
-This operation takes a few minutes, and it is normal for some alerts to appear.
+Questa operazione richiede alcuni minuti ed è normale che appaiano alcuni avvisi.
 
-Open a new **command prompt** window and install Jekyll and Bundler with the following command:
+Apri una nuova finestra del **prompt dei comandi** e installa Jekyll e Bundler con il seguente comando:
 
 ```
 gem install jekyll bundler
 ```
 
-Check that Jekyll is installed correctly:
+Verifica che Jekyll sia installato correttamente:
 
 ```
 jekyll -v
 ```
 
-If you see the version number, it means Jekyll is installed and working correctly on your system. **Now everything is ready to start using Jekyll!**
+Se vedi il numero di versione, significa che Jekyll è installato e funziona correttamente sul tuo sistema. **Ora tutto è pronto per iniziare a usare Jekyll!**
 
 <br>
-# How to Install Jekyll on macOS
+# Come Installare Jekyll su macOS
 
-By default, Ruby is pre-installed on macOS, but you cannot use this version of Ruby to install Jekyll because it is outdated. For example, on Ventura, the pre-installed Ruby version is 2.6.10, while the latest version is 3.1.3.
+Per impostazione predefinita, Ruby è preinstallato su macOS, ma non puoi usare questa versione di Ruby per installare Jekyll perché è obsoleta. Ad esempio, su Ventura, la versione Ruby preinstallata è 2.6.10, mentre l'ultima versione è 3.1.3.
 
-To solve this problem, you need to install Ruby correctly using a version manager like **chruby**.
+Per risolvere questo problema, devi installare Ruby correttamente usando un gestore di versioni come **chruby**.
 
 ### Homebrew
-First, you need to install **Homebrew** (in the unlikely event you haven't already done so).
+Prima di tutto, devi installare **Homebrew** (nell'improbabile caso tu non l'abbia già fatto).
 
-To check if Homebrew is installed, run the command
+Per verificare se Homebrew è installato, esegui il comando
 
 ```
 brew -v
 ```
 
-If it is already installed, you will see the version number.
+Se è già installato, vedrai il numero di versione.
 
-**To install Homebrew** on your Mac, run the following command in your terminal:
+**Per installare Homebrew** sul tuo Mac, esegui il seguente comando nel tuo terminale:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-The system may ask you to accept the Homebrew license terms, follow the instructions that appear:
+Il sistema potrebbe chiederti di accettare i termini di licenza di Homebrew, segui le istruzioni che appaiono:
 
 ```bash
 sudo xcodebuild -license
 ```
 
-and after scrolling through the license terms, type
+e dopo aver scorso i termini di licenza, digita
 
 ```bash
 agree
 ```
 
-to accept.
+per accettare.
 
-Once the installation is complete, configure your shell to automatically use brew: to use brew from your terminal you will need to add it to PATH, **the program will tell you exactly how to do this** at the end of the installation, it is something like:
+Una volta completata l'installazione, configura la tua shell per usare automaticamente brew: per usare brew dal tuo terminale dovrai aggiungerlo a PATH, **il programma ti dirà esattamente come farlo** alla fine dell'installazione, è qualcosa come:
 
 ```bash
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/username/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-Once the installation is successful, **exit and restart the terminal**, then check if Homebrew is ready to use by running this command:
+Una volta completata l'installazione con successo, **esci e riavvia il terminale**, quindi verifica se Homebrew è pronto per l'uso eseguendo questo comando:
 
 ```bash
 brew -v
 ```
 
-### Chruby and Ruby-install
-If you have seen the Homebrew version, you can proceed to install **chruby** and ruby-install with the following command.
+### Chruby e Ruby-install
+Se hai visto la versione di Homebrew, puoi procedere all'installazione di **chruby** e ruby-install con il seguente comando.
 
-Continue with the installation of chruby and ruby-install using the following command:
+Continua con l'installazione di chruby e ruby-install usando il seguente comando:
 
 ```bash
 brew install chruby ruby-install
 ```
 
-Now you can install the latest version of ruby, 3.1.3, using the ruby-install package you just installed:
+Ora puoi installare l'ultima versione di ruby, 3.1.3, usando il pacchetto ruby-install che hai appena installato:
 
 ```bash
 ruby-install 3.1.3
 ```
 
-This operation will take several minutes.
+Questa operazione richiederà diversi minuti.
 
-Once the installation is complete, configure your shell to automatically use chruby with the following command:
+Una volta completata l'installazione, configura la tua shell per usare automaticamente chruby con il seguente comando:
 
 ```bash
 echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
@@ -145,115 +145,85 @@ echo "chruby ruby-3.1.3" >> ~/.zshrc
 ```
 
 <div class="alert alert-warning" role="alert">
-  <strong>Warning!</strong> If you are using a bash terminal instead of zsh, the command is the same, just point to the different terminal type: <code>~/.bash_profile</code>
+  <strong>Attenzione!</strong> Se stai usando un terminale bash invece di zsh, il comando è lo stesso, punta solo al diverso tipo di terminale: <code>~/.bash_profile</code>
 
-N.B. if you use bash instead of zsh, the command is the same, just point to the different terminal type: <code>~/.bash_profile</code>
+N.B. se usi bash invece di zsh, il comando è lo stesso, punta solo al diverso tipo di terminale: <code>~/.bash_profile</code>
 </div>
 
-```bash
-echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.bash_profile
-echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.bash_profile
-echo "chruby ruby-3.1.3" >> ~/.bash_profile
-```
-
-At this point you can **exit and relaunch the Terminal**, then check that everything works by running this command:
+**Chiudi e riapri** il tuo terminale e controlla che la versione corretta di ruby sia ora in uso:
 
 ```bash
 ruby -v
 ```
 
-It should say **<code>ruby 3.1.3.</code>**
+### Jekyll e Bundler
 
-### Jekyll and Bundler
-You have installed the latest version of Ruby on your computer, so you can proceed to install the latest Jekyll and bundler gems:
+Ora puoi installare gli ultimi aggiornamenti delle gems e bundle (cosa che potrebbe richiedere alcuni minuti):
 
 ```bash
-gem install jekyll bundler
+gem update --system
+gem update
+gem cleanup
 ```
 
-Check that Jekyll is installed correctly
+Infine, installa Jekyll:
+
+```bash
+gem install jekyll
+```
+
+Verifica la versione per assicurarti che l'installazione sia avvenuta correttamente. Se è installato correttamente, vedrai il numero di versione.
 
 ```bash
 jekyll -v
 ```
 
-If you see the version number, it means Jekyll is installed and working correctly on your system. **Now everything is ready to start using Jekyll!**
+# Come Installare Jekyll su Linux
 
-<br>
-# Test: Creating a Site
+L'installazione su Linux è molto simile a quella su macOS. Puoi installare Ruby usando il tuo gestore di pacchetti (apt, yum, ecc.) e poi installare Jekyll usando gem.
 
-Important note: it is recommended to develop the website using an editor like Visual Studio Code or PyCharm.
-<hr>
-To create a new site that will work locally in the my-progettone folder, type:
+Per Ubuntu/Debian:
 
 ```bash
-jekyll new my-progettone
+sudo apt-get install ruby-full build-essential zlib1g-dev
 ```
 
-enter the folder
+Per Fedora:
 
 ```bash
-cd my-progettone
+sudo dnf install ruby ruby-devel @development-tools
 ```
 
-run
+Quindi installa Jekyll:
 
 ```bash
-bundle exec jekyll serve
+gem install jekyll bundler
 ```
 
-open your browser at [http://127.0.0.1:4000](http://127.0.0.1:4000) (as indicated in the terminal)
+# Usare Jekyll
 
-Congratulations, if you have made it this far you should see a website with the minimum elements.
+Una volta installato Jekyll, puoi creare un nuovo sito o lavorare con un sito esistente.
 
-WARNING! In the case of **windows** installations, it is possible that the **wdm** gem returns an error that prevents the site from being compiled.
+## Lavorare con questo template
 
-In this case, open the Gemfile created during the execution of <code>jekyll <strong>new</strong> my-progettone</code>
-
-comment out the line using the **#** character
+Clona il repository e naviga nella cartella `docs`:
 
 ```bash
-# gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
-```
-
-save the file and run:
-
-```bash
-bundle update
-```
-
-restart the site with
-
-```bash
-bundle exec jekyll serve
-```
-
-**open your browser at [http://127.0.0.1:4000](http://127.0.0.1:4000)**
-
-<br>
-# To clone this theme into your own repository
-
-Go to the following link:
-
-```bash
-https://github.com/new/import
-```
-
-and enter the link of the repository to clone:
-
-```bash
-https://github.com/sobigdata-master/progettone-template.git
-```
-
-run
-
-```bash
+cd docs
 bundle install
-```
-
-start the site with the bundle command
-```bash
 bundle exec jekyll serve
 ```
 
-**open your browser at [http://127.0.0.1:4000](http://127.0.0.1:4000)**
+Il tuo sito sarà disponibile all'indirizzo `http://localhost:4000/`.
+
+## Creare un nuovo sito
+
+Per creare un nuovo sito Jekyll:
+
+```bash
+jekyll new mio-sito
+cd mio-sito
+bundle exec jekyll serve
+```
+
+Per maggiori informazioni, consulta la [documentazione ufficiale di Jekyll](https://jekyllrb.com/docs/).

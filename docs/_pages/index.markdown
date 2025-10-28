@@ -11,34 +11,34 @@ vega: true
     <img src="{{ site.baseurl }}/assets/images/header.svg" alt="sbd-pattern" class="full-width-image">
 </div>
 
-To develop the *Progettone* website  we will use a **Static Site Generator** (SSG), which allows you to create fast-loading websites without the need for complex backend systems or databases.
-In particular, we will use one of the most popular SSGs: Jekyll and GitHub Pages.
+Per sviluppare il sito web del *Progettone* utilizzeremo un **Static Site Generator** (SSG), che consente di creare siti web a caricamento rapido senza la necessità di complessi sistemi backend o database.
+In particolare, utilizzeremo uno degli SSG più popolari: Jekyll e GitHub Pages.
 {: .lead }
 
-**Jekyll** is a simple, blog-aware, static site generator that takes your content, renders it into a static website, and serves it. Combined with GitHub Pages, it allows you to host your website for free, making it an ideal choice for personal projects, portfolios, and documentation sites.
+**Jekyll** è un semplice generatore di siti statici, blog-aware, che prende i tuoi contenuti, li rende in un sito web statico e li serve. Combinato con GitHub Pages, consente di ospitare il tuo sito web gratuitamente, rendendolo una scelta ideale per progetti personali, portfolio e siti di documentazione.
 {: .lead }
 
-**GitHub Pages** is a service provided by GitHub that allows you to host static websites directly from a GitHub repository. It supports Jekyll out of the box, making it easy to deploy your Jekyll site with just a few clicks.
+**GitHub Pages** è un servizio fornito da GitHub che consente di ospitare siti web statici direttamente da un repository GitHub. Supporta Jekyll nativamente, rendendo facile il deploy del tuo sito Jekyll con pochi click.
 {: .lead }
 
 <br>
 
-# What you need to start
+# Cosa ti serve per iniziare
 
-- [ ] 🐙 **A GitHub account** - If you don't have one, you can [create it for free](https://github.com/)
-- [ ] 📝 **A well-structured draft of your project** - This can be a Word document or any other format you prefer. It should include the main ideas, structure, and content you want to present on your website.
-- [ ] 📊 **A folder with your saved Charts** - You can use the charts you created saving them as .json files in the `assets/charts` folder.
-- [ ] 📂 **A folder with all the images** you want to use on your website: you can save them in the `assets/images` folder.
+- [ ] 🐙 **Un account GitHub** - Se non ne hai uno, puoi [crearlo gratuitamente](https://github.com/)
+- [ ] 📝 **Una bozza ben strutturata del tuo progetto** - Può essere un documento Word o qualsiasi altro formato tu preferisca. Dovrebbe includere le idee principali, la struttura e il contenuto che vuoi presentare sul tuo sito web.
+- [ ] 📊 **Una cartella con i tuoi Grafici salvati** - Puoi usare i grafici che hai creato salvandoli come file .json nella cartella `assets/charts`.
+- [ ] 📂 **Una cartella con tutte le immagini** che vuoi usare sul tuo sito web: puoi salvarle nella cartella `assets/images`.
 {: .bg-color-full  .px-3 .lead}
 
 <br>
 
-# How to start
+# Come iniziare
 
-The development of the website can be done in two ways:
-1. **Completely online, using GitHub and GitHub Pages.**
-2. Locally, using Jekyll and then pushing the changes to GitHub.
+Lo sviluppo del sito web può essere effettuato in due modi:
+1. **Completamente online, utilizzando GitHub e GitHub Pages.**
+2. Localmente, utilizzando Jekyll e poi caricando le modifiche su GitHub.
 
-In the guide, we will focus on the first option, which is the easiest way to create a website. 
-However, if you want to develop the website locally, you need to install Jekyll on your computer. 
-You can find the instructions on how to do it [in the official guide](https://jekyllrb.com/docs/installation/) or in the [local development section]({{ site.baseurl }}/local-development/).
+Nella guida, ci concentreremo sulla prima opzione, che è il modo più semplice per creare un sito web. 
+Tuttavia, se vuoi sviluppare il sito web localmente, devi installare Jekyll sul tuo computer. 
+Puoi trovare le istruzioni su come farlo [nella guida ufficiale](https://jekyllrb.com/docs/installation/) o nella [sezione sviluppo locale]({{ site.baseurl }}/local-development/).

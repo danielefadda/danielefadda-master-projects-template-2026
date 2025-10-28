@@ -4,50 +4,50 @@ title: "Dashboard Analisi Dati"
 plotly: true
 header_type: hero
 header_img: assets/images/plotly-gallery.png
-header_title: "Plotly Charts"
-subtitle: "How to embed Plotly charts in your Jekyll pages"
+header_title: "Grafici Plotly"
+subtitle: "Come incorporare grafici Plotly nelle tue pagine Jekyll"
 ---
 
-You can add interactive charts to your pages using the `plotly-graph.html` include. To embed a Plotly chart, you need to export the chart as an HTML file and place it in the `assets/charts/plotly/` directory.
+Puoi aggiungere grafici interattivi alle tue pagine usando l'include `plotly-graph.html`. Per incorporare un grafico Plotly, devi esportare il grafico come file HTML e posizionarlo nella directory `assets/charts/plotly/`.
 {: .lead}
 
 <br>
 ---
 
-# From Python to the Web
+# Da Python al Web
 
-Plotly is a powerful Python library for interactive data visualization. To display a Plotly chart on your website, export the chart as an HTML file.
+Plotly è una potente libreria Python per la visualizzazione interattiva dei dati. Per visualizzare un grafico Plotly sul tuo sito web, esporta il grafico come file HTML.
 
-### Exporting a Plotly Chart
+### Esportare un Grafico Plotly
 
-Given any Plotly `figure`:
+Data qualsiasi `figura` Plotly:
 
 ```python
 import plotly.graph_objects as go
 
-# Example data
+# Dati di esempio
 fig = go.Figure(data=[go.Bar(x=['A', 'B', 'C', 'D', 'E'], y=[28, 55, 43, 91, 81])])
 
 
-# Save the chart as an HTML file
+# Salva il grafico come file HTML
 fig.write_html("grafico1.html", include_plotlyjs=False, full_html=False, div_id="grafico1")
 ```
 
-`full_html=False` exports only the chart, not a full HTML page.
+`full_html=False` esporta solo il grafico, non una pagina HTML completa.
 
-`div_id="grafico1"` sets the ID for the chart's container, which you can reference in your page.
+`div_id="grafico1"` imposta l'ID per il container del grafico, che puoi referenziare nella tua pagina.
 
-**Place the exported grafico1.html file in the assets/charts/plotly/ directory.**
+**Posiziona il file grafico1.html esportato nella directory assets/charts/plotly/.**
 
-#### Example of export of a Plotly Chart
+#### Esempio di esportazione di un Grafico Plotly
 
-[Colab Notebook Example](https://colab.research.google.com/drive/18L-aGb1r3HlfTNprgBfqqlWxge4cqF4L?usp=sharing){:target="_blank"} 
+[Esempio Notebook Colab](https://colab.research.google.com/drive/18L-aGb1r3HlfTNprgBfqqlWxge4cqF4L?usp=sharing){:target="_blank"} 
 
 <br>
 ---
 
-### Embedding the Chart in a Jekyll Page
-To display the chart, use the following tag in your markdown file:
+### Incorporare il Grafico in una Pagina Jekyll
+Per visualizzare il grafico, usa il seguente tag nel tuo file markdown:
 
 {% raw %}
 ```markdown
@@ -55,17 +55,17 @@ To display the chart, use the following tag in your markdown file:
 ```
 {% endraw %}
   
-Parameters:
+Parametri:
 
-- `id`: ID of the container div (required)
-- `file`: name of the HTML file with the chart (required)
-- `path`: custom path (default: /assets/charts/plotly/)
-- `height`: chart height (default: 500px)
-- `width`: chart width (default: 100%)
-- `class`: additional CSS classes (optional)
+- `id`: ID del div container (obbligatorio)
+- `file`: nome del file HTML con il grafico (obbligatorio)
+- `path`: percorso personalizzato (default: /assets/charts/plotly/)
+- `height`: altezza del grafico (default: 500px)
+- `width`: larghezza del grafico (default: 100%)
+- `class`: classi CSS aggiuntive (opzionale)
 
 <br>
 
-# Plotly Chart Example
+# Esempio di Grafico Plotly
 
 {% include plotly-graph.html id="grafico1" file="grafico1.html" height="500px" %}
