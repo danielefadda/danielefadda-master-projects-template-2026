@@ -18,8 +18,8 @@
 # {{ site.title }}, {{ site.email }}, ecc. Puoi creare variabili personalizzate:
 # saranno accessibili nei template tramite {{ site.myvariable }}.
 
-title: "Template per Progetti"
-subtitle: "Questo è un template per i progetti Master di SoBigData"
+title: "Template per Progettoni"
+subtitle: "Questo è un template per i progetti del Master SoBigData"
 description: >- # ignora i ritorni a capo fino a "baseurl:"
   Scrivi qui una descrizione accattivante per il tuo nuovo sito. Puoi modificare questa
   riga in _config.yml. Apparirà nei meta del documento head (per
