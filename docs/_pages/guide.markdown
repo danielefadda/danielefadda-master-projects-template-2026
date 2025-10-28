@@ -32,7 +32,7 @@ header_title: "Una guida per sviluppare il tuo<br> sito web del Progettone"
 ```
 ├─ 🚀 Avviare il progetto usando il template
 │   ├─ 📥 Clonare via "Import repository"
-│   ├─ 🏷️ Rinominare il repo (es. g0-2025-website)
+│   ├─ 🏷️ Rinominare il repo (es. g0-2026-website)
 │   ├─ 👥 Invitare i collaboratori
 │   └─ 🖥️ (Opzionale) Sviluppo locale con ruby installato:
 │       ├─ 🔧 bundle install
@@ -46,7 +46,7 @@ Puoi iniziare clonando il repository template di Jekyll per il *Template Progett
 Vai al seguente link:
 
 ```bash
-https://github.com/danielefadda/master-projects-template-2025
+https://github.com/danielefadda/master-projects-template-2026
 ```
 
 e premi sul pulsante **Use this template** nell'angolo in alto a destra della pagina e seleziona **Create a new repository**.
@@ -55,7 +55,7 @@ e premi sul pulsante **Use this template** nell'angolo in alto a destra della pa
 
 assegnagli un nome basato sul tuo progetto, usando il seguente formato:
 ```bash
-g0-2025-website
+g0-2026-website
 ```
 **N.B. devi sostituire `g0` con il numero del tuo gruppo.**
 
@@ -144,7 +144,7 @@ Tutte le variabili nel file `_config.yml` vengono utilizzate per generare il con
 La prima cosa da fare è impostare la variabile `baseurl` al nome del tuo repository, ad esempio:
 
 ```yaml
-baseurl: "/g0-2025-website"
+baseurl: "/g0-2026-website"
 ```
 
 Devi anche impostare la variabile `url` all'URL del tuo sito GitHub Pages, ad esempio:
@@ -656,7 +656,7 @@ Questa è una panoramica sintetica dei passaggi visti in questa guida:
 │
 ├─ 1. 🚀 Utilizzare questo template Jekyll per creare un nuovo progetto
 │   ├─ 📥 Clonare via "Import repository"
-│   ├─ 🏷️ Rinominare il repo (es. g0-2025-website)
+│   ├─ 🏷️ Rinominare il repo (es. g0-2026-website)
 │   ├─ 👥 Invitare i collaboratori
 │   └─ 🖥️ (Opzionale) Sviluppo locale con ruby installato
 │       ├─ 🔧 bundle install
