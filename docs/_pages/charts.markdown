@@ -3,34 +3,34 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: "Charts"
+title: "Grafici"
 vega: true
 
 header_type: hero #base, post, hero,image, splash
 header_img: assets/images/altair-gallery.png
-header_title: "Altair Charts"
-subtitle: "How to embed Altair charts in your Jekyll pages"
+header_title: "Grafici Altair"
+subtitle: "Come incorporare grafici Altair nelle tue pagine Jekyll"
 ---
 
-You can add charts to your pages using the `vegachart` tag. To embed a chart you had to save the chart as a json file in the `assets/charts` directory and then use the `vegachart` tag to embed it in the page. 
+Puoi aggiungere grafici alle tue pagine usando il tag `vegachart`. Per incorporare un grafico devi salvare il grafico come file json nella directory `assets/charts` e quindi usare il tag `vegachart` per incorporarlo nella pagina. 
 
-# From Python to the Web
+# Da Python al Web
 
-Altair is a data visualization library for Python, based on Vega and Vega-Lite. This means that Altair generates Vega-Lite specifications, which are then converted into Vega specifications and finally into charts viewable in a web browser. To embed an Altair chart in a web page, you need to convert the Vega-Lite specification into a JSON object and save it as a `.json` file.
+Altair è una libreria di visualizzazione dati per Python, basata su Vega e Vega-Lite. Questo significa che Altair genera specifiche Vega-Lite, che vengono poi convertite in specifiche Vega e infine in grafici visualizzabili in un browser web. Per incorporare un grafico Altair in una pagina web, è necessario convertire la specifica Vega-Lite in un oggetto JSON e salvarla come file `.json`.
 
-The procedure in `altair` to save the Vega-Lite specification as a `.json` file is as follows:
+La procedura in `altair` per salvare la specifica Vega-Lite come file `.json` è la seguente:
 
-Given any `altair` `chart`:
+Dato qualsiasi `chart` di `altair`:
 ```python
-# Example data
+# Dati di esempio
 data = pd.DataFrame({
     'a': ['A', 'B', 'C', 'D', 'E'],
     'b': [28, 55, 43, 91, 81]
 })
 ```
-If you want to make the chart responsive, when saving the `.json` file you can specify the property `width='container'`.
+Se vuoi rendere il grafico responsive, quando salvi il file `.json` puoi specificare la proprietà `width='container'`.
 ```python
-# Create the chart
+# Crea il grafico
 chart = alt.Chart(data).mark_bar().encode(
     x='a:N',
     y='b:Q'
@@ -39,14 +39,14 @@ chart = alt.Chart(data).mark_bar().encode(
     height=300 
 )
 
-# Save the chart as a JSON file
+# Salva il grafico come file JSON
 chart_json = chart.to_json()
 with open('chart.json', 'w') as f:
     f.write(chart_json)
 ```
-> [Link to the Colab Notebook with the example above](https://colab.research.google.com/drive/1ySTEzV2se1buHZ7X5p2fX5RlDUXyAfaX?usp=sharing)
+> [Link al Notebook Colab con l'esempio sopra](https://colab.research.google.com/drive/1ySTEzV2se1buHZ7X5p2fX5RlDUXyAfaX?usp=sharing)
 
-The `chart.json` file can then be used in a web page to display the chart. To do this, you can use the Jekyll `vegachart` tag, specifying the path to the `.json` file as the value of the `schema-url` attribute.
+Il file `chart.json` può quindi essere usato in una pagina web per visualizzare il grafico. Per farlo, puoi usare il tag Jekyll `vegachart`, specificando il percorso al file `.json` come valore dell'attributo `schema-url`.
 {% raw %}
 ```html
 <div style="height: 400px">
@@ -55,16 +55,16 @@ The `chart.json` file can then be used in a web page to display the chart. To do
 ```
 {% endraw %}
 
-This theme has been customized to support Vega charts without complications: if the page where you want to display the chart has `vega: true` in the front matter, the `vegachart` tag will be interpreted and the chart will be displayed correctly.
-`vega: true` is a variable that tells the page to load the Vega plugin.
-In this way, the chart will be displayed responsively, adapting to the width of the container in which it is placed.
+Questo tema è stato personalizzato per supportare i grafici Vega senza complicazioni: se la pagina in cui vuoi visualizzare il grafico ha `vega: true` nel front matter, il tag `vegachart` verrà interpretato e il grafico verrà visualizzato correttamente.
+`vega: true` è una variabile che dice alla pagina di caricare il plugin Vega.
+In questo modo, il grafico verrà visualizzato in modo responsive, adattandosi alla larghezza del container in cui è posizionato.
 
-# Example of embedding a chart created with Altair
+# Esempio di incorporamento di un grafico creato con Altair
 
 <div style="height: 400px">
 <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_responsive.json" style="width: 100%; height: 100%"></vegachart>
 </div>
 
-- The chart was saved as `chart_responsive.json` and placed in the `assets/charts` folder.
-- If you try to display the chart in a web page without specifying the property `width='container'`, the chart will not be responsive and will be displayed with a fixed width.
-- If you try to display the chart in a Jupyter notebook, the chart will not be visible because the `width='container'` property is not supported in that environment. In this case, you can specify a fixed width in pixels and change the width property only during export.
+- Il grafico è stato salvato come `chart_responsive.json` e posizionato nella cartella `assets/charts`.
+- Se provi a visualizzare il grafico in una pagina web senza specificare la proprietà `width='container'`, il grafico non sarà responsive e verrà visualizzato con una larghezza fissa.
+- Se provi a visualizzare il grafico in un Jupyter notebook, il grafico non sarà visibile perché la proprietà `width='container'` non è supportata in quell'ambiente. In questo caso, puoi specificare una larghezza fissa in pixel e cambiare la proprietà width solo durante l'esportazione.
