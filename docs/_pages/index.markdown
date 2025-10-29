@@ -15,7 +15,7 @@ Per sviluppare il sito web del *Progettone* utilizzeremo un **Static Site Genera
 In particolare, utilizzeremo uno degli SSG più popolari: Jekyll e GitHub Pages.
 {: .lead }
 
-**Jekyll** è un semplice generatore di siti statici, blog-aware, che prende i tuoi contenuti, li rende in un sito web statico e li serve. Combinato con GitHub Pages, consente di ospitare il tuo sito web gratuitamente, rendendolo una scelta ideale per progetti personali, portfolio e siti di documentazione.
+**Jekyll** è un semplice generatore di siti statici, blog-aware, che prende i tuoi contenuti, li renderizza in un sito web statico e li serve. Combinato con GitHub Pages, consente di ospitare il tuo sito web gratuitamente, rendendolo una scelta ideale per progetti personali, portfolio e siti di documentazione.
 {: .lead }
 
 **GitHub Pages** è un servizio fornito da GitHub che consente di ospitare siti web statici direttamente da un repository GitHub. Supporta Jekyll nativamente, rendendo facile il deploy del tuo sito Jekyll con pochi click.
