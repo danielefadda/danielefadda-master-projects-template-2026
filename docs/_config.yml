@@ -45,18 +45,22 @@ url: "https://danielefadda.github.io" # il dominio principale del sito senza bar
 navbar:
   style :  dual # non modificarlo: imposta lo stile della navbar.
   brand: # brand della navbar, mostrato a sinistra.
-    title :  "Template per i Progettoni del Master SoBigData"
+    title :  "Template Progettoni"
     img: "./assets/images/Logo_masthead.png" # non modificare
     url: /
   nav:
+    - title: installazione di Jekyll
+      child:
+      - title: Sviluppo locale
+        url: /local-development.html
+      - title: Local development
+        url: /local-development-eng.html
     - title: Guida
       url: /guide.html
     - title: Pagina di esempio
       url: /example.html
     - title: Approfondimenti
       child:
-        - title: Sviluppo locale
-          url: /local-development.html
         - title: Markdown
           url: /markdown.html
         - title: Grafici Altair

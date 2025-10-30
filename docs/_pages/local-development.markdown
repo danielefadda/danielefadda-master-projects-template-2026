@@ -6,22 +6,19 @@ header_type: hero #base, post, hero,image, splash
 header_img: assets/images/Jekyll_Logo.png
 ---
 
-<div class="alert alert-warning">
-<p>
-<strong>Questa sezione è opzionale</strong>. Non è necessario installare Jekyll se vuoi sviluppare il sito web online usando GitHub Pages.
-</p>
-<p>I vantaggi dello sviluppo locale del sito web sono:</p>
-<ul>
-<li>Puoi testare il sito web localmente prima di caricarlo su GitHub.</li>
-<li>Puoi usare un editor locale per scrivere il contenuto e gestire i file.</li>
-<li>Non devi aspettare che GitHub Pages costruisca il sito web ogni volta che apporti una modifica</li>
-</ul>
-</div>
+
+
 
 # Guida all'Installazione di Jekyll
 
 Per sviluppare il sito web del Progettone®, utilizzeremo un Static Site Generator (SSG), che ti consente di creare siti web a caricamento rapido senza la necessità di complessi sistemi backend o database. In particolare, utilizzeremo uno degli SSG più popolari, **Jekyll**. Jekyll è un SSG gratuito e open-source basato sul linguaggio di programmazione Ruby. **Non è necessario conoscere Ruby per usare Jekyll**; devi solo avere Ruby installato sul tuo computer.
 <hr>
+
+## Indice
+- [Installazione su Windows](#come-installare-jekyll-su-windows)
+- [Installazione su macOS](#come-installare-jekyll-su-macos)
+- [Installazione su Linux](#come-installare-jekyll-su-linux)
+- [Usare Jekyll](#usare-jekyll)
 
 #### I vantaggi di Jekyll
 
@@ -204,18 +201,6 @@ gem install jekyll bundler
 
 Una volta installato Jekyll, puoi creare un nuovo sito o lavorare con un sito esistente.
 
-## Lavorare con questo template
-
-Clona il repository e naviga nella cartella `docs`:
-
-```bash
-cd docs
-bundle install
-bundle exec jekyll serve
-```
-
-Il tuo sito sarà disponibile all'indirizzo `http://localhost:4000/`.
-
 ## Creare un nuovo sito
 
 Per creare un nuovo sito Jekyll:
@@ -227,3 +212,10 @@ bundle exec jekyll serve
 ```
 
 Per maggiori informazioni, consulta la [documentazione ufficiale di Jekyll](https://jekyllrb.com/docs/).
+
+Il tuo sito sarà disponibile all'indirizzo `http://localhost:4000/`.
+
+
+<div class="alert alert-warning">
+<p> Se il nuovo sito si avvia correttamente, puoi considerare Jekyll installato correttamente sul tuo sistema. <strong>Buon lavoro!</strong></p>
+</div>
